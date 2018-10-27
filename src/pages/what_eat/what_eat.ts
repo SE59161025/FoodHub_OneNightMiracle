@@ -1,4 +1,6 @@
+import { NavController } from 'ionic-angular';
 import { Component } from '@angular/core';
+import { MenuPage } from '../menu/menu';
 
 
 @Component({
@@ -6,6 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: 'what_eat.html'
 })
 export class what_eat{
-    constructor() {
+    constructor(public navCtrl:NavController) {
+    }
+    pushMenu(){
+      this.navCtrl.push(MenuPage, {
+      });
     }
 }
