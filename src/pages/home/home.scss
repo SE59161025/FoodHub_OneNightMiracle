@@ -3,6 +3,9 @@ home-page {
         background:#bae2be;
         border-color: transparent;
     }
+    ion-content{
+        background-image: url('../../imgs/Logo_fh.png');
+    }
     .card-background-page {
         ion-card {
           position: relative;
@@ -35,6 +38,9 @@ home-page {
     .img2{
         height: 200px;
         width: 100%;
+    }
+    img{
+        box-align: center;
     }
     .slide-zoom {
         height: 100%;
