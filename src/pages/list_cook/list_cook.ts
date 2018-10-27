@@ -29,6 +29,7 @@ export class list_cook implements OnInit {
             checkMacthIngredient = test1.includes(substring);
             console.log(checkMacthIngredient);
     }
+    
 
   }
 }
