@@ -8,8 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { list_cook } from '../pages/list_cook/list_cook';
 import { cook_detail } from '../pages/cook_detail/cook_detail';
+
+
+
 import { eat_detail } from '../pages/eat_detail/eat_detail';
 import { type_food1 } from '../pages/type_food1/type_food1';
+
 
 
 @Component({
