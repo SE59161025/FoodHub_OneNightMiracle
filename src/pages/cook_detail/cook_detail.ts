@@ -9,7 +9,7 @@ export class cook_detail implements OnInit {
     link_img;
     solution;
     staple;
-    level;
+    level: any[] = [];
     time_solu;
     time_sta;
   constructor(private navParams: NavParams) {
