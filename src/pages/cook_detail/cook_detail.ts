@@ -9,20 +9,20 @@ export class cook_detail implements OnInit {
     link_img;
     solution;
     staple;
-    level;
+    level: any [] = [];
     time_solu;
     time_sta;
   constructor(private navParams: NavParams) {
-    this.name = navParams.get('name');
+    this.name = navParams.get('name'); 
     this.link_img = navParams.get('link_img'); 
     this.solution = navParams.get('solution');
     this.staple = navParams.get('staple');
-    this.level  = navParams.get('level');
+    this.level.length = navParams.get('level');
     this.time_solu = navParams.get('time_solu');
     this.time_sta  = navParams.get('time_sta');
   }
  
   ngOnInit(){
-    console.log(this.solution);
+    // console.log(this.solution);
   }
 }
