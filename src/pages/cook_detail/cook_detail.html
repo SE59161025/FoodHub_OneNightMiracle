@@ -19,29 +19,27 @@
           <div class="card-title">{{name}}</div>
          <!-- <div class="card-subtitle">41 Listings</div> --> 
       </ion-card>
-      <ion-card style="width: 100%; height: 30%;">
-        <ion-card-header>
-            ระดับความยาก
+      <ion-card style="width: 100%;">
+        <ion-card-header >
+          <h1 style="font-weight: bold;">ระดับความยาก</h1>
           </ion-card-header>
           <ion-card-content>
+            <div *ngFor="let value of level;">
               <ion-icon name="star" style='color: yellow'></ion-icon>
-              <ion-icon name="star" style='color: yellow'></ion-icon>
-              <ion-icon name="star" style='color: yellow'></ion-icon>
-              <ion-icon name="star"></ion-icon>
-              <ion-icon name="star"></ion-icon>
+            </div>
           </ion-card-content>
       </ion-card>
       <ion-card style="width: 100%;">
-          <ion-card-header >
-              เวลาในการทำ
+          <ion-card-header>
+            <h1 style="font-weight: bold;">เวลาในการทำ</h1>
             </ion-card-header>
             <ion-card-content>
                 {{time_solu}} นาที
             </ion-card-content>
         </ion-card>
         <ion-card style="width: 100%;">
-            <ion-card-header>
-                เวลาในการเตรียม
+            <ion-card-header >
+                <h1 style="font-weight: bold;">เวลาในการเตรียม</h1>
               </ion-card-header>
               <ion-card-content>
                 {{time_sta}} นาที
@@ -52,9 +50,10 @@
                   <h1 style="font-weight: bold; ">รายละเอียดอาหาร</h1>
                 </ion-card-header>
                 <ion-card-content>
-                    
                   <h2 style="font-weight: bold;">สิ่งที่ต้องเตรียม</h2>
-                    <p >{{staple}}</p>
+                    <p *ngFor="let value_sta of staple; index as j">
+                        {{j+1}}. {{value_sta}}
+                    </p>
                     <hr>
                   <h2 style="font-weight: bold;" >วิธีทำ</h2>
                   <p *ngFor="let value of solution; index as i">

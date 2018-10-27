@@ -1,4 +1,8 @@
 home-page {
+    .toolbar-background {
+        background:#bae2be;
+        border-color: transparent;
+    }
     .card-background-page {
         ion-card {
           position: relative;
@@ -46,11 +50,5 @@ home-page {
         width: 100%;
     }
 
-    .bg-content{
-        background-image: url("../assets/imgs/wallpaper.jpg`");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-     }
 }
 

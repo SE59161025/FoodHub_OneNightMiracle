@@ -1,38 +1,25 @@
 <ion-header>
     <ion-navbar>
+      <ion-buttons left>
+          <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+              <ion-icon name="arrow-back"></ion-icon>
+          </button>
+      </ion-buttons>
+      <ion-buttons right>
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>FoodHub</ion-title>
+      </ion-buttons>
+      <ion-title text-center >รายการอาหาร</ion-title>
     </ion-navbar>
   </ion-header>
   
   <ion-content padding >
-      <div *ngIf="abc()">
-          VIEW
-      </div>
+      
       {{toppings}}
     <p>
       รายการอาหาร
     </p>
-<div>
-
-
-  <ion-header>
-  <ion-navbar>
-    <ion-buttons left>
-        <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
-            <ion-icon name="arrow-back"></ion-icon>
-        </button>
-    </ion-buttons>
-    <ion-buttons right>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    </ion-buttons>
-    <ion-title text-center >รายการอาหาร</ion-title>
-  </ion-navbar>
-</ion-header>
 
 <ion-content padding class="card-background-page" >
   <p>เมนูอาหาร</p>

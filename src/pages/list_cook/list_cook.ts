@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
 })
+
 export class list_cook implements OnInit {
   toppings2: any = ['Mushrooms', '2', '4'];
   toppings: string;
@@ -27,7 +28,7 @@ export class list_cook implements OnInit {
             checkMacthIngredient = test1.includes(substring);
             console.log(checkMacthIngredient);
     }
+    
 
   }
-  
 }
