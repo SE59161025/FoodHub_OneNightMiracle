@@ -1,67 +1,58 @@
-
-  <ion-header>
-      <ion-navbar>
-       
-        <h2 align="center" style="color: white;">รายละเอียดอาหาร</h2>
-        <ion-buttons right>
-          <button item-start ion-button icon-only color="dark" menuToggle>
-            <ion-icon name="menu"></ion-icon>
-          </button>
-        </ion-buttons>
-      </ion-navbar>
-    </ion-header>
-  <ion-content ><!-- start ion-content padding-->
-    
-    <ion-content padding class="card-background-page" style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat;">
-      <ion-card  >
-          <img  src="{{link_img}}"/>
-          <div class="card-title">{{name}}</div>
-         <!-- <div class="card-subtitle">41 Listings</div> --> 
-      </ion-card>
-
-      <ion-card style="  background-color:#cce490;">
-        <ion-card-header >
-          <h1 style="font-weight: bold; ">ระดับความยาก</h1>
-          </ion-card-header>
-          <ion-card-content style="transform: rotate(90deg); height: 40px;">
-            <div *ngFor="let value of level;" >
-              <ion-icon name="star" style='color: yellow; width: 20px;'></ion-icon>
-            </div>
-          </ion-card-content>
-      </ion-card>
-      <ion-card style=" background-color:#cce490; ">
-          <ion-card-header>
-            <h1 style="font-weight: bold;">เวลาในการทำ</h1>
-            </ion-card-header>
-            <ion-card-content>
-                {{time_solu}} นาที
-            </ion-card-content>
-        </ion-card>
-        <ion-card style=" background-color:#cce490;">
-            <ion-card-header >
-                <h1 style="font-weight: bold;">เวลาในการเตรียม</h1>
-              </ion-card-header>
-              <ion-card-content>
-                {{time_sta}} นาที
-              </ion-card-content>
-          </ion-card>
-          <ion-card style=" text-align: left; background-color:#cce490; height: auto;">
-              <ion-card-header>
-                  <h1 style="font-weight: bold; ">รายละเอียดอาหาร</h1>
-                </ion-card-header>
-                <ion-card-content>
-                  <h2 style="font-weight: bold;">สิ่งที่ต้องเตรียม</h2>
-                    <p *ngFor="let value_sta of staple; index as j">
-                        {{j+1}}. {{value_sta}}
-                    </p>
-                    <hr>
-                  <h2 style="font-weight: bold;" >วิธีทำ</h2>
-                  <p *ngFor="let value of solution; index as i">
-                      {{i+1}}. {{value}}
-                  </p>
-                  
-                </ion-card-content>
-          </ion-card>
-            
-    </ion-content>
-  </ion-content><!-- End ion-content padding-->
+<ion-header>
+  <ion-navbar>
+    <h2 style="color: white;">รายละเอียดอาหาร</h2>
+    <ion-buttons right>
+      <button item-start ion-button icon-only color="dark" menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="card-background-page" style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat;">
+  <ion-card  >
+    <img  src="{{link_img}}"/>
+    <div class="card-title">{{name}}</div>
+  </ion-card>
+  <ion-card style="  background-color:#cce490;">
+    <ion-card-header >
+      <h1 style="font-weight: bold; ">ระดับความยาก</h1>
+    </ion-card-header>
+    <ion-card-content style="transform: rotate(90deg); height: 40px;">
+      <div *ngFor="let value of level;" >
+        <ion-icon name="star" style='color: yellow; width: 20px;'></ion-icon>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card style=" background-color:#cce490; ">
+    <ion-card-header>
+      <h1 style="font-weight: bold;">เวลาในการทำ</h1>
+    </ion-card-header>
+    <ion-card-content>
+      {{time_solu}} นาที
+    </ion-card-content>
+  </ion-card>
+  <ion-card style=" background-color:#cce490;">
+    <ion-card-header >
+      <h1 style="font-weight: bold;">เวลาในการเตรียม</h1>
+    </ion-card-header>
+    <ion-card-content>
+      {{time_sta}} นาที
+    </ion-card-content>
+  </ion-card>
+  <ion-card style=" text-align: left; background-color:#cce490; height: auto;">
+    <ion-card-header>
+      <h1 style="font-weight: bold; ">รายละเอียดอาหาร</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <h2 style="font-weight: bold;">สิ่งที่ต้องเตรียม</h2>
+      <p *ngFor="let value_sta of staple; index as j">
+        {{j+1}}. {{value_sta}}
+      </p>
+      <hr>
+      <h2 style="font-weight: bold;" >วิธีทำ</h2>
+      <p *ngFor="let value of solution; index as i">
+        {{i+1}}. {{value}}
+      </p>     
+    </ion-card-content>
+  </ion-card>
+</ion-content>

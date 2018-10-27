@@ -6,8 +6,6 @@ import { cook_detail } from '../cook_detail/cook_detail';
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
 })
-
-
 export class list_cook implements OnInit {
   toppings2: any = ['Mushrooms', '2', '4'];
   toppings: string;

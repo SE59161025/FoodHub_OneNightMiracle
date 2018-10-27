@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavParams } from 'ionic-angular';
 @Component({
-  selector: 'cook-detail',
+  selector: 'cook-detail-page',
   templateUrl: 'cook_detail.html'
 })
 export class cook_detail implements OnInit {
@@ -21,7 +21,6 @@ export class cook_detail implements OnInit {
     this.time_solu = navParams.get('time_solu');
     this.time_sta  = navParams.get('time_sta');
   }
- 
   ngOnInit(){
     // console.log(this.solution);
   }
