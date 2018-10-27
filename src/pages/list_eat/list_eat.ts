@@ -29,7 +29,6 @@ export class list_eat implements OnInit {
   nameconcat : string="";
   checkUse : any [] = [] ;
   keepListFood : any [] = [];
-  length : number = 0;
   a: any = ['Mushrooms', '123', '2', ['Mushrooms of the best', 'Mushrooms2', 'Mushrooms3']];
   constructor(public Params: NavParams, public navCtrl: NavController ,public _FoodListProvider:FoodListProvider) {
     this.toppings = Params.get('toppings');
@@ -45,7 +44,7 @@ export class list_eat implements OnInit {
             checkMacthIngredient = this.nameconcat.includes(substring);
             if(checkMacthIngredient==true){
               if(this.checkUse[k]=='false'){
-                this.keepListFood[length++]=_FoodListProvider.food_list[k];
+                this.keepListFood.push(_FoodListProvider.food_list[k]);
                 this.checkUse[k]='true';
               }
              
