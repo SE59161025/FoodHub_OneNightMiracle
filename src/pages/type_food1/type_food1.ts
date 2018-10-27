@@ -41,6 +41,7 @@ export class type_food1 {
           "น้ำเปล่า 2 ลิตร ",
         ],
         level: 3,
+        nlvel: 2,
         time_solu: 20,
         time_sta: 10
       });
@@ -67,7 +68,8 @@ export class type_food1 {
           "ซอสมะเขือเทศ 2 ช้อนโต๊ะ ",
           "ถั่วฝักยาว 30 กรัม"
         ],
-        level: "4",
+        level: 4,
+        nlvel: 1,
         time_solu: 10,
         time_sta: 10
       });
@@ -100,7 +102,8 @@ export class type_food1 {
           "พริกแห้ง",
           "น้ำตาลทราย"
         ],
-        level: "3",
+        level: 3,
+        nlvel: 2,
         time_solu: 15,
         time_sta: 20
       });
@@ -127,7 +130,8 @@ export class type_food1 {
           "คนอร์ซุปไก่ก้อน 1 ก้อน",
           "ผักชีฝรั่ง สำหรับโรยหน้า"
         ],
-        level: "4",
+        level: 4,
+        nlvel: 1,
         time_solu: 30,
         time_sta: 20
       });
@@ -160,7 +164,8 @@ export class type_food1 {
           "ใบกะเพราตามชอบ",
           "เส้นอุด้งลวก 200 กรัม"
         ],
-        level: "3",
+        level: 3,
+        nlvel: 2,
         time_solu: 30,
         time_sta: 20
       });

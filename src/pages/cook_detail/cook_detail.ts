@@ -9,7 +9,8 @@ export class cook_detail implements OnInit {
     link_img;
     solution;
     staple;
-    level : any [];
+    level : any [] = [];
+    nlvel : any [] = [];
     time_solu;
     time_sta;
   constructor(private navParams: NavParams) {
@@ -18,11 +19,13 @@ export class cook_detail implements OnInit {
     this.solution = navParams.get('solution');
     this.staple = navParams.get('staple');
     this.level.length = navParams.get('level');
+    this.nlvel.length = navParams.get('nlvel');
     this.time_solu = navParams.get('time_solu');
     this.time_sta  = navParams.get('time_sta');
   }
  
   ngOnInit(){
-    console.log(this.solution);
+    // console.log(this.solution);
+    // console.log(this.level);
   }
 }
