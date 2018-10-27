@@ -1,6 +1,6 @@
 home-page {
     .toolbar-background {
-        background: #dce775;
+        background:#bae2be;
         border-color: transparent;
     }
     .card-background-page {
@@ -36,6 +36,9 @@ home-page {
         height: 200px;
         width: 100%;
     }
+    img{
+        box-align: center;
+    }
     .slide-zoom {
         height: 100%;
     }
@@ -50,11 +53,5 @@ home-page {
         width: 100%;
     }
 
-    .bg-content{
-        background-image: url("../assets/imgs/wallpaper.jpg`");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-     }
 }
 

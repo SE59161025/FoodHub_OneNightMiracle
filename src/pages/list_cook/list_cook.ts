@@ -7,8 +7,6 @@ import { cook_detail } from '../cook_detail/cook_detail';
   templateUrl: 'list_cook.html'
 })
 
-
-
 export class list_cook implements OnInit {
   toppings2: any = ['Mushrooms', '2', '4'];
   toppings: string;
@@ -50,6 +48,7 @@ export class list_cook implements OnInit {
     let test1 = this.a[3][0]+this.a[3][1]+this.a[3][2];
     
     console.log(test1);
+
     
   }
   gotopage(data:any){

@@ -1,5 +1,14 @@
+
 <ion-header>
   <ion-navbar>
+    <ion-row>
+      <ion-col col-3>
+        <img src="assets/imgs/Logo_fh.png" style="height:50px"/>
+      </ion-col>
+      <ion-col col-6>
+        <h2>FoodHub</h2>
+      </ion-col>
+    </ion-row>
     <ion-buttons right>
       <button item-start ion-button icon-only color="dark" menuToggle>
         <ion-icon name="menu"></ion-icon>
@@ -13,7 +22,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="card-background-page bg-content" style="background-image: url('../assets/imgs/wallpaper.jpg`');">
+<ion-content padding class="card-background-page " style="background-color:#389168;background-image: url('assets/imgs/boil_type/ต้มยำขาหมู.jpg')">
   <h3>เมนูยอดนิยม</h3>
   <ion-slides pager autoplay="100" loop="true" speed="1500" style="height:220px">
       <ion-slide *ngFor="let slide of slidesfood">
@@ -23,12 +32,12 @@
   <h3>ประเภทอาหาร</h3>
   <ion-card (click)="pushPage()" >
       <img class="img1" src="assets/imgs/boil_type/ต้มยำขาหมู.jpg"/>
-      <div class="card-title">เมนูต้ม</div>
+      <div class="card-title" style="color:white">เมนูต้ม</div>
       <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
   </ion-card>
   <ion-card>
       <img class="img1" src="assets/imgs/fire_type/ปีกไก่ทอด.jpg"/>
-      <div class="card-title">เมนูทอด</div>
+      <div class="card-title ">เมนูทอด</div>
       <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
   </ion-card>
   <ion-card>
