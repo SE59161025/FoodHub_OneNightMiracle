@@ -8,6 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { list_cook } from '../pages/list_cook/list_cook';
 import { cook_detail } from '../pages/cook_detail/cook_detail';
+import { eat_detail } from '../pages/eat_detail/eat_detail';
 
 
 @Component({
@@ -32,6 +33,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'list_cook', component: list_cook },
       { title: 'cook_detail', component: cook_detail },
+      { title: 'eat_detail', component: eat_detail },
     ];
   }
 
