@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { cook_detail } from '../cook_detail/cook_detail';
-import { NavController,Platform } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 
 @Component({
