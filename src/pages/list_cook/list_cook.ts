@@ -4,7 +4,7 @@ import { NavController, NavParams} from 'ionic-angular';
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
 })
-<<<<<<< HEAD
+
 
 export class list_cook implements OnInit {
   toppings2: any = ['Mushrooms', '2', '4'];
