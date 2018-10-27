@@ -1,4 +1,3 @@
-import { eat_detail } from './../pages/eat_detail/eat_detail';
 import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
