@@ -17,7 +17,7 @@ export class cook_detail implements OnInit {
     this.link_img = navParams.get('link_img'); 
     this.solution = navParams.get('solution');
     this.staple = navParams.get('staple');
-    this.level  = navParams.get('level');
+    this.level.length = navParams.get('level');
     this.time_solu = navParams.get('time_solu');
     this.time_sta  = navParams.get('time_sta');
   }
