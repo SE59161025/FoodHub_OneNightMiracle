@@ -1,6 +1,6 @@
 
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton="true">
     <ion-row>
       <ion-col col-3>
         <img src="assets/imgs/Logo_fh.png" style="height:50px"/>
@@ -9,11 +9,6 @@
         <h2>FoodHub</h2>
       </ion-col>
     </ion-row>
-    <ion-buttons right>
-      <button item-start ion-button icon-only color="dark" menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-    </ion-buttons>
     <ion-buttons right>
         <button item-start ion-button icon-only (click)="pushMenu()" >
           <ion-icon name="menu"></ion-icon>
