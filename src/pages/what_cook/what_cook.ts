@@ -5,7 +5,7 @@ import { FoodListProvider } from '../../providers/food-list/food-list';
 import { MenuPage } from '../menu/menu';
 
 @Component({
-  selector: 'what_cook-page',
+  selector: 'what-cook-page',
   templateUrl: 'what_cook.html'
 })
 export class what_cook{

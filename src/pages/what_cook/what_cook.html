@@ -9,8 +9,10 @@
         </ion-navbar>
 </ion-header>
       <ion-content padding >
-       
-        
+        <div center>
+            <img class="img1" src="../assets/imgs/chef.png" style="width:50%">
+        </div>
+        <p>วัตถุดิบที่คุณมี</p>
                 <ion-item>
                         <ion-label>วัตถุดิบ</ion-label>
                         <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="not($event)">
