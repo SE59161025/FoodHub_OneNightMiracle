@@ -17,8 +17,10 @@ import { cook_detail } from '../pages/cook_detail/cook_detail';
 import { type_food1 } from '../pages/type_food1/type_food1';
 
 import { what_cook } from '../pages/what_cook/what_cook';
-
+import { HttpModule } from '@angular/http';
 import { MenuPage } from '../pages/menu/menu';
+import { FoodListProvider } from '../providers/food-list/food-list';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
 
@@ -41,6 +43,9 @@ import { MenuPage } from '../pages/menu/menu';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule,
+    HttpClientModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -59,7 +64,8 @@ import { MenuPage } from '../pages/menu/menu';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FoodListProvider
   ]
 })
 
