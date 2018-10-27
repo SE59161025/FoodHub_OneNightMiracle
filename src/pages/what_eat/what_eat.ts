@@ -20,15 +20,6 @@ export class what_eat{
     });
   }
   checkvalue(data){
-    console.log('ทดสอบ ',data);
-    if(data.length!=0){
-      this.checkvalidate=true;
-    }else{
-      this. checkvalidate=false;
-    }
-  }
-  not(data){
-    console.log('ทดสอบ ',data);
     if(data.length!=0){
       this.checkvalidate=true;
     }else{

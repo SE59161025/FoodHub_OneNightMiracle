@@ -9,18 +9,20 @@
     <!-- {{keepListFood}} -->
     <!-- {{toppings}} -->
     
-    <ion-content padding class="card-background-page"></ion-content>
-        <p>
-            รายการอาหาร
-        </p>
+    <ion-content padding class="card-background-page">
+        <!-- <div id="map_canvas">
+            <button ion-button (click)="onButtonClick($event)">start Demo </button>
+        </div> -->
         <p *ngFor="let data of keepListFood; index as j">
             <!-- {{j+1}}. {{data}} -->
             
-            <ion-card (click)="gotopage(data)" >
+            <ion-card (click)="gotopage(j)" >
                 <img src="{{data[1]}}" class="img1" />
                 <div class="card-title">{{data[0]}}</div>
             </ion-card>
         </p>
+    </ion-content>
+       
     
 
     </ion-content>
