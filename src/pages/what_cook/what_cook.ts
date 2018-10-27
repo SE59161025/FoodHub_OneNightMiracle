@@ -19,14 +19,16 @@ export class what_cook{
       'toppings': this.toppings
     });
   }
-  func(value){
-    if(value !== undefined){
+  func(){
       this.checkvalidate = true;
-    }
-    console.log(this.checkvalidate );
   }
   not(data){
     console.log('ทดสอบ ',data);
+    if(data.length!=0){
+      this.checkvalidate=true;
+    }else{
+      this. checkvalidate=false;
+    }
   }
   not2(){
     console.log('ทดสอบบบบบบบบบบบบบบบ');
