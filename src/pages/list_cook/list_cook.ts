@@ -15,11 +15,13 @@ export class list_cook implements OnInit {
   nameconcat : string="";
   checkUse : any [] = [] ;
   keepListFood : any [] = [];
-  length : number = 0;
   a: any = ['Mushrooms', '123', '2', ['Mushrooms of the best', 'Mushrooms2', 'Mushrooms3']];
   constructor(public Params: NavParams, public navCtrl: NavController ,public _FoodListProvider:FoodListProvider) {
+    this.keepListFood  = [];
     this.toppings = Params.get('toppings');
-    console.log(_FoodListProvider.food_list.length);
+    // console.log(`check`,this.toppings);
+    // console.log(_FoodListProvider.food_list);
+    // console.log(_FoodListProvider.food_list.length);
     for(let l = 0 ; l < _FoodListProvider.food_list.length ; l++){
       this.checkUse[l] = 'false';
     }
@@ -30,20 +32,22 @@ export class list_cook implements OnInit {
       for (let j = 0; j < this.toppings.length; j++) {
         let substring = this.toppings[j],
             checkMacthIngredient = this.nameconcat.includes(substring);
-            console.log(substring);
-            console.log(this.nameconcat);
-            console.log(checkMacthIngredient);
+            // console.log(substring);
+            // console.log(this.nameconcat);
+            // console.log(checkMacthIngredient);
             if(checkMacthIngredient==true){
               if(this.checkUse[k]=='false'){
-                console.log(_FoodListProvider.food_list[k][0]);
-                this.keepListFood[length++]=_FoodListProvider.food_list[k];
+                console.log(_FoodListProvider.food_list[k]);
+                this.keepListFood.push(_FoodListProvider.food_list[k]);
                 this.checkUse[k]='true';
               }
              
             }
       }
       this.nameconcat ="";
+      // this.length=0;
     }
+    console.log(this.keepListFood);
     
   }
   gotopage(data:any){
@@ -58,6 +62,7 @@ export class list_cook implements OnInit {
     });
   }
   ngOnInit(){
-    
+
+    // this.keepListFood  = [];
   }
 }
