@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { FoodListProvider } from '../../providers/food-list/food-list';
 @Component({
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
@@ -12,7 +13,8 @@ export class list_cook implements OnInit {
   toppings: string;
   car: boolean = false;
   a: any = ['Mushrooms', '123', '2', ['Mushrooms of the best', 'Mushrooms2', 'Mushrooms3']];
-  constructor(public Params: NavParams, public navCtrl: NavController) {
+  constructor(public Params: NavParams, public navCtrl: NavController ,private _FoodListProvider:FoodListProvider) {
+    console.log(_FoodListProvider.food_list);
     this.toppings = Params.get('toppings');
     console.log(typeof this.a);
     for (let i = 0; i < this.a.length; i++) {
