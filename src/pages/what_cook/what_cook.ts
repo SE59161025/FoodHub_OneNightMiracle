@@ -20,12 +20,10 @@ export class what_cook{
       'toppings': this.toppings
     });
   }
-<<<<<<< HEAD
   pushMenu(){
     this.navCtrl.push(MenuPage, {
     });
   }
-=======
   func(value){
     if(value !== undefined){
       this.checkvalidate = true;
@@ -41,5 +39,4 @@ export class what_cook{
   showSelectValue = function(mySelect) {
     console.log(mySelect);
 }
->>>>>>> d5a8074f07bbdf528dac33360c9b5365a2e68e0d
 }
