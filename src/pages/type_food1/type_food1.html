@@ -1,16 +1,46 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
+  <ion-navbar>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title align="center">ต้ม-แกง</ion-title>
+    <ion-buttons right>
+      <button item-start ion-button icon-only color="dark" menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
-      <ion-title>FoodHub</ion-title>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding >
-    <h3 class="band_center">type 1</h3>
-    <p>
-      type 1
-    </p>
-  </ion-content>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding><!-- start ion-content padding-->
+    <ion-content class="card-background-page">
+      <ion-card style="width: 100%; height: 20%;" >
+          <img  src="https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/f24c927c-9420-436c-9873-8e814487acfb.jpg"/>
+          <div class="card-title">ซุปไข่มักกะโรนี</div>
+         <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 20%;" >
+        <img  src="https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/48af5aca-cc10-47c7-a371-edea926bfb79.jpg"/>
+        <div class="card-title">แกงส้มหนูน้อย</div>
+       <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 20%;" >
+        <img  src="https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/d2175818-0326-4032-8887-532459d55c78.jpg"/>
+        <div class="card-title">แกงไก่หน่อไม้ดอง</div>
+      <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 20%;" >
+        <img  src="https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/477463e1-9be6-425b-bf83-0b5e6a686c0b.jpg"/>
+        <div class="card-title">ต้มยำไก่บ้านใบมะขามอ่อน</div>
+      <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 20%;" >
+        <img  src="https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/af1021d4-3645-4e70-b7b9-bfab248dd941.png"/>
+        <div class="card-title">อุด้งต้มโคล้งปลาสลิดทอด</div>
+      <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      
+    </ion-content>
+</ion-content>
   

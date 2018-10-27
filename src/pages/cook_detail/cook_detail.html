@@ -1,17 +1,87 @@
-<ion-header>
-    <ion-navbar>
-    <ion-buttons right>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-    </ion-buttons>
-      <ion-title>FoodHub</ion-title>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content padding>
-    <h3>FoodHub</h3>
-    <p>
-      cook_detail
-    </p>
-  </ion-content>
+
+  <ion-header>
+      <ion-navbar>
+        <ion-buttons left>
+            <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title align="center">รายละเอียดอาหาร</ion-title>
+        <ion-buttons right>
+          <button item-start ion-button icon-only color="dark" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-navbar>
+    </ion-header>
+  <ion-content padding><!-- start ion-content padding-->
+   
+    <ion-content class="card-background-page">
+      <ion-card style="width: 100%; height: 40%;" >
+          <img  src="https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/f24c927c-9420-436c-9873-8e814487acfb.jpg"/>
+          <div class="card-title">ซุปไข่มักกะโรนี</div>
+         <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 30%;">
+        <ion-card-header>
+            ระดับความยาก
+          </ion-card-header>
+          <ion-card-content>
+              <ion-icon name="star" style='color: yellow'></ion-icon>
+              <ion-icon name="star" style='color: yellow'></ion-icon>
+              <ion-icon name="star" style='color: yellow'></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+          </ion-card-content>
+      </ion-card>
+      <ion-card style="width: 100%; height: 30%;">
+          <ion-card-header >
+              เวลาในการทำ
+            </ion-card-header>
+            <ion-card-content>
+                20 นาที
+            </ion-card-content>
+        </ion-card>
+        <ion-card style="width: 100%; height: 30%;">
+            <ion-card-header>
+                เวลาในการเตรียม
+              </ion-card-header>
+              <ion-card-content>
+                10 นาที
+              </ion-card-content>
+          </ion-card>
+          <ion-card style="width: 100%; text-align: left; height: 625px;">
+              <ion-card-header>
+                  <h1 style="font-weight: bold; align: center;">รายละเอียดอาหาร</h1>
+                </ion-card-header>
+                <ion-card-content>
+                    
+                  <h2 style="font-weight: bold;">สิ่งที่ต้องเตรียม</h2>
+                    <p>  
+                        มักกะโรนีต้มสุก 300 กรัม <br>
+                        ซุปไก่ก้อน คนอร์ <br>
+                        เนเชอรัล 1 ก้อน <br>
+                        ไข่ไก่ 3 ฟอง <br>
+                        กุ้งสด 13 ตัว <br>
+                        แครอทหั่นเต๋า 2 หัว <br>
+                        เกลือ 2 ช้อนชา <br>
+                        พริกไทยป่น 1 ช้อนชา <br>
+                        น้ำเปล่า 2 ลิตร <br>
+                        ผักชี สำหรับตกแต่ง        <br>              
+                    </p>
+                    <hr>
+                  <h2 style="font-weight: bold;">วิธีการทำ</h2>
+                  <p>
+                      1.ตั้งหม้อบนเตาแก๊สจากนั้นใส่น้ำเปล่าลงไป โดยใช้ไฟปานกลาง เมื่อน้ำเริ่มเดือดให้ใส่ ซุปไก่ก้อน คนอร์ เนเชอรัล ลงไปในน้ำเดือด ตามด้วยเกลือและพริกไทย<br>
+                      2.ใส่แครอทหั่นเต๋าลงไปต้มจนแครอทนิ่มค่อยใส่เนื้อสัตว์เข้าไป<br>
+                      3.เมื่อแครอทสุกแล้วใส่กุ้งสดลงไป จากนั้นนำไข่ไก่มาเทลงบนตะแกรง แล้ววนตะแกรงให้ไข่ไหลลงเป็นเส้นลงในหม้อ จากนั้นใช้ทัพพีคนน้ำซุปเพื่อไม่ให้ไข่ติดกัน<br>
+                      4.ใส่มักกะโรนีต้มสุกลงไปในหม้อ รอให้น้ำเดือดอีกครั้ง ยกลงจากเตา<br>
+                      5.ตักซุปไข่มักกะโรนีใส่ลงในถ้วย ตกแต่งด้วยผักชี<br>
+                  </p>
+                  
+                </ion-card-content>
+            </ion-card>
+    </ion-content>
+  </ion-content><!-- End ion-content padding-->
+
+
