@@ -1,16 +1,37 @@
 import { Component } from '@angular/core';
 import { cook_detail } from '../cook_detail/cook_detail';
-import { NavController } from 'ionic-angular';
+import { NavController,Platform } from 'ionic-angular';
+import {
+  GoogleMaps,
+  GoogleMap,
+  GoogleMapOptions
+} from '@ionic-native/google-maps';
+
+
 @Component({
   selector: 'type-food1-page',
   templateUrl: 'type_food1.html'
 })
 export class type_food1 {
- 
-  constructor(public navCtrl: NavController) {
-
+  map: GoogleMap;
+  constructor(public navCtrl: NavController,private platforms: Platform) {
+    this.platforms.ready().then(()=>{
+      this.loadMap();
+    });
   }
- 
+  loadMap() {
+
+    let options: GoogleMapOptions = {
+      controls: {
+        compass: true,
+        myLocation: true,
+        myLocationButton: true,
+        mapToolbar: true
+      }
+    };
+    this.map = GoogleMaps.create('map_canvas', options);
+  }
+
   goto_cook_detail(food) {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
@@ -159,4 +180,6 @@ export class type_food1 {
       });
     }
   }
+
+  
 }
