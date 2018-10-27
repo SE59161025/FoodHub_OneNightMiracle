@@ -1,13 +1,31 @@
 <ion-header>
-        <ion-navbar>
-          <ion-title>what_eat</ion-title>
-          <ion-buttons right>
-                <button item-start ion-button icon-only (click)="pushMenu()">
-                  <ion-icon name="menu"></ion-icon>
-                </button>
-            </ion-buttons>
-        </ion-navbar>
+  <ion-navbar>
+    <ion-title>กินไรดี</ion-title>
+    <ion-buttons right>
+        <button item-start ion-button icon-only (click)="pushMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
-<ion-content>
-
+<ion-content padding >
+ 
+  
+          <ion-item>
+                  <ion-label>วัดถดิบ</ion-label>
+                  <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="not($event)">
+                    <ion-option >ปลาสลิด</ion-option>
+                    <ion-option >ไข่ไก่</ion-option>
+                    <ion-option >กุ้ง</ion-option>
+                    <ion-option >แซลมอน</ion-option>
+                    <ion-option >เนื้อวัว</ion-option>
+                    <ion-option >เนื้อไก่</ion-option>
+                  </ion-select>
+                </ion-item>
+                <input type='hidden' value="">
+                <div style="text-align: center">
+                      <button ion-button (click)="pushPage()" style="background-color: #71c9ce" [disabled] = "!checkvalidate ">ยืนยันการจอง</button>
+              </div>
+  
+  
 </ion-content>
