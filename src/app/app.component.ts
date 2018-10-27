@@ -1,3 +1,4 @@
+import { what_eat } from './../pages/what_eat/what_eat';
 import { eat_detail2 } from './../pages/eat_detail2/eat_detail2';
 import { Component, ViewChild } from '@angular/core';
 
@@ -43,6 +44,7 @@ export class MyApp {
       { title: 'eat_detail', component: eat_detail },
       { title: 'type_food1', component: type_food1 },
       { title: 'what_cook', component: what_cook },
+      { title: 'what_eat', component: what_eat },
       { title: 'eat_detail2', component: eat_detail2 },
 
     ];
