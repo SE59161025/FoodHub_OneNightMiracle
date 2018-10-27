@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>กินไรดี</ion-title>
+    <h2 style="color:white">กินไรดี</h2>
     <ion-buttons right>
         <button item-start ion-button icon-only (click)="pushMenu()">
           <ion-icon name="menu"></ion-icon>
@@ -8,9 +8,11 @@
     </ion-buttons>
   </ion-navbar>
 </ion-header>
-<ion-content padding >
- 
-  
+<ion-content padding style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat;">
+  <div center>
+      <img class="img1" src="../assets/imgs/eat.png" style="width:50%">
+  </div>
+  <p style="font-size: 20px;">วัตถุดิบที่คุณมี</p>
           <ion-item>
                   <ion-label>วัดถดิบ</ion-label>
                   <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="checkvalue($event)">
@@ -21,7 +23,7 @@
                     <ion-option >เนื้อวัว</ion-option>
                     <ion-option >เนื้อไก่</ion-option>
                   </ion-select>
-                </ion-item>
+                </ion-item><br>
                 <div style="text-align: center">
                       <button ion-button (click)="pushPage()" style="background-color: #71c9ce" [disabled] = "!checkvalidate ">ยืนยันการจอง</button>
               </div>

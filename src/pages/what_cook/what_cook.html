@@ -8,11 +8,11 @@
           </ion-buttons>
         </ion-navbar>
 </ion-header>
-      <ion-content padding >
+      <ion-content padding style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat; " >
         <div center>
             <img class="img1" src="../assets/imgs/chef.png" style="width:50%">
         </div>
-        <p>วัตถุดิบที่คุณมี</p>
+        <p style="font-size: 20px;">วัตถุดิบที่คุณมี</p>
                 <ion-item>
                         <ion-label>วัตถุดิบ</ion-label>
                         <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="not($event)">
@@ -25,6 +25,7 @@
                         </ion-select>
                       </ion-item>
                       <input type='hidden' value="">
+                      <br>
                       <div style="text-align: center">
                             <button ion-button (click)="pushPage()" style="background-color: #71c9ce" [disabled] = "!checkvalidate ">ยืนยันการจอง</button>
                     </div>

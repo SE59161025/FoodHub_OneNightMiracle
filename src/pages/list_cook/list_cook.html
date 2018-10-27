@@ -1,19 +1,11 @@
 <ion-header>
     <ion-navbar>
-        <ion-title text-center>รายการอาหาร</ion-title>
+        <h2 text-center  style="color:white;">รายการอาหาร</h2>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <!-- {{keepListFood}} -->
-    <!-- {{toppings}} -->
-    <p>
-        รายการอาหาร
-    </p>
-   
-
-    <ion-content padding class="card-background-page">
-        <p>เมนูอาหาร</p>
+    <ion-content class="card-background-page" style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat;">
+       
         <p *ngFor="let data of keepListFood; index as j">
             <!-- {{j+1}}. {{data}} -->
             
