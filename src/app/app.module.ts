@@ -8,13 +8,14 @@ import { list_cook} from '../pages/list_cook/list_cook';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { cook_detail } from '../pages/cook_detail/cook_detail';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    list_cook
-    
+    list_cook,
+    cook_detail
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    list_cook
+    list_cook,
+    cook_detail
   ],
   providers: [
     StatusBar,
