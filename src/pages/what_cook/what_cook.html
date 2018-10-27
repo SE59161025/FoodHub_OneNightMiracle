@@ -1,0 +1,37 @@
+<ion-header>
+        <ion-navbar>
+          <ion-buttons left>
+              <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+                  <ion-icon name="arrow-back"></ion-icon>
+              </button>
+          </ion-buttons>
+          <ion-title>what_cook</ion-title>
+          <ion-buttons right>
+            <button item-start ion-button icon-only color="dark" menuToggle>
+              <ion-icon name="menu"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-navbar>
+      </ion-header>
+      5555555555555555
+      <ion-content padding >
+       
+        
+                <ion-item>
+                        <ion-label>Toppings</ion-label>
+                        <ion-select [(ngModel)]="toppings" multiple="true">
+                          <ion-option>Bacon</ion-option>
+                          <ion-option>Black Olives</ion-option>
+                          <ion-option>Extra Cheese</ion-option>
+                          <ion-option>Mushrooms</ion-option>
+                          <ion-option>Pepperoni</ion-option>
+                          <ion-option>Sausage</ion-option>
+                        </ion-select>
+                      </ion-item>
+                      <div style="text-align: center">
+                            <button ion-button (click)="pushPage()" style="background-color: #71c9ce">ยืนยันการจอง</button>
+                    </div>
+        
+        
+      </ion-content>
+      

@@ -15,7 +15,11 @@ import { eat_detail } from '../pages/eat_detail/eat_detail';
 //  author  : Supachai Boonying
 import { cook_detail } from '../pages/cook_detail/cook_detail';
 import { type_food1 } from '../pages/type_food1/type_food1';
+
+import { what_cook } from '../pages/what_cook/what_cook';
+
 import { MenuPage } from '../pages/menu/menu';
+
 
 
 @NgModule({
@@ -26,8 +30,13 @@ import { MenuPage } from '../pages/menu/menu';
     cook_detail,
     eat_detail,
     type_food1,
+    what_cook,
+    eat_detail2,
     MenuPage,
-    eat_detail2
+    type_food1
+
+  
+   
   ],
   imports: [
     BrowserModule,
@@ -40,6 +49,8 @@ import { MenuPage } from '../pages/menu/menu';
     list_cook,
     cook_detail,
     eat_detail,
+    type_food1,
+    what_cook,
     type_food1,
     MenuPage,
     eat_detail2
