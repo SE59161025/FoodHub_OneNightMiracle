@@ -12,7 +12,6 @@
     </ion-header>
   <ion-content padding><!-- start ion-content padding-->
     
-    
     <ion-content class="card-background-page">
       <ion-card style="width: 100%; height: 40%;" >
           <img  src="{{link_img}}"/>
@@ -23,9 +22,9 @@
         <ion-card-header >
           <h1 style="font-weight: bold;">ระดับความยาก</h1>
           </ion-card-header>
-          <ion-card-content>
-            <div *ngFor="let value of level;">
-              <ion-icon name="star" style='color: yellow'></ion-icon>
+          <ion-card-content style="transform: rotate(90deg); height: 40px; align: center;">
+            <div *ngFor="let value of level;" >
+              <ion-icon name="star" style='color: yellow;'></ion-icon>
             </div>
           </ion-card-content>
       </ion-card>

@@ -1,9 +1,7 @@
 home-page {
     .toolbar-background {
-        background:#389168;
-        border-color: transparent;
-        
-        
+        background:#8BC34A;
+        border-color: transparent; 
     }
     .card-background-page {
         .ion-card {
@@ -37,6 +35,9 @@ home-page {
     .img2{
         height: 200px;
         width: 100%;
+    }
+    img{
+        box-align: center;
     }
     .slide-zoom {
         height: 100%;
