@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { cook_detail } from '../pages/cook_detail/cook_detail';
 import { eat_detail } from '../pages/eat_detail/eat_detail';
 import { type_food1 } from '../pages/type_food1/type_food1';
+import { MenuPage } from '../pages/menu/menu';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { type_food1 } from '../pages/type_food1/type_food1';
     list_cook,
     cook_detail,
     eat_detail,
-    type_food1
+    type_food1,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { type_food1 } from '../pages/type_food1/type_food1';
     list_cook,
     cook_detail,
     eat_detail,
-    type_food1
+    type_food1,
+    MenuPage
   ],
   providers: [
     StatusBar,

@@ -1,10 +1,15 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Page</ion-title>
+    <ion-title>FoodHub</ion-title>
     <ion-buttons right>
       <button item-start ion-button icon-only color="dark" menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
+    </ion-buttons>
+    <ion-buttons right>
+        <button item-start ion-button icon-only (click)="pushMenu()" >
+          <ion-icon name="menu"></ion-icon>
+        </button>
     </ion-buttons>
   </ion-navbar>
 </ion-header>
@@ -17,7 +22,7 @@
       </ion-slide>
   </ion-slides>
   <h3>ประเภทอาหาร</h3>
-  <ion-card (click)="pushPage()" center>
+  <ion-card (click)="pushPage()" >
       <img class="img1" src="assets/imgs/boil-01.jpg"/>
       <div class="card-title">เมนูต้ม</div>
       <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
