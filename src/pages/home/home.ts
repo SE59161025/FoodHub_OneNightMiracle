@@ -1,3 +1,4 @@
+import { type_food2 } from './../type_food2/type_food2';
 import { MenuPage } from './../menu/menu';
 import { type_food1 } from './../type_food1/type_food1';
 import { Component } from '@angular/core';
@@ -12,6 +13,10 @@ export class HomePage {
   }
   pushPage(){
     this.navCtrl.push(type_food1, {
+    });
+  }
+  pushPage2(){
+    this.navCtrl.push(type_food2, {
     });
   }
   pushMenu(){

@@ -1,23 +1,18 @@
 <ion-header>
         <ion-navbar>
-          <ion-buttons left>
-              <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
-                  <ion-icon name="arrow-back"></ion-icon>
+          <h2 align="center" style="color: white;">ทำอะไรดี</h2>
+          <ion-buttons right>
+              <button item-start ion-button icon-only (click)="pushMenu()">
+                <ion-icon name="menu"></ion-icon>
               </button>
           </ion-buttons>
-          <ion-title>what_cook</ion-title>
-          <ion-buttons right>
-            <button item-start ion-button icon-only color="dark" menuToggle>
-              <ion-icon name="menu"></ion-icon>
-            </button>
-          </ion-buttons>
         </ion-navbar>
-      </ion-header>
+</ion-header>
       <ion-content padding >
        
         
                 <ion-item>
-                        <ion-label>Toppings</ion-label>
+                        <ion-label>วัตถุดิบ</ion-label>
                         <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="not($event)">
                           <ion-option >ปลาสลิด</ion-option>
                           <ion-option >ไข่ไก่</ion-option>

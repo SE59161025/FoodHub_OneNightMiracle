@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { list_cook } from '../list_cook/list_cook';
 import { NavController } from 'ionic-angular';
 import { FoodListProvider } from '../../providers/food-list/food-list';
+import { MenuPage } from '../menu/menu';
 
 @Component({
   selector: 'what_cook-page',
@@ -19,8 +20,9 @@ export class what_cook{
       'toppings': this.toppings
     });
   }
-  func(){
-      this.checkvalidate = true;
+  pushMenu(){
+    this.navCtrl.push(MenuPage, {
+    });
   }
   not(data){
     console.log('ทดสอบ ',data);

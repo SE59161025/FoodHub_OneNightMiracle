@@ -1,15 +1,5 @@
 <ion-header>
     <ion-navbar>
-        <ion-buttons left>
-            <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
-                <ion-icon name="arrow-back"></ion-icon>
-            </button>
-        </ion-buttons>
-        <ion-buttons right>
-            <button ion-button menuToggle>
-                <ion-icon name="menu"></ion-icon>
-            </button>
-        </ion-buttons>
         <ion-title text-center>รายการอาหาร</ion-title>
     </ion-navbar>
 </ion-header>
@@ -20,36 +10,17 @@
     <p>
         รายการอาหาร
     </p>
-    <p *ngFor="let data of keepListFood; index as j">
-        <!-- {{j+1}}. {{data}} -->
-        
-        <ion-card (click)="gotopage(data)" >
-            <img src="{{data[1]}}" class="img1" />
-            <div class="card-title">เมนูต้ม</div>
-        </ion-card>
-    </p>
+   
 
     <ion-content padding class="card-background-page">
         <p>เมนูอาหาร</p>
-        <ion-card>
-            <img src="assets/imgs/ต้ม-แกง-3.jpg" class="img1" />
-            <div class="card-title">เมนูต้ม</div>
-        </ion-card>
-
-        <ion-card>
-            <img src="assets/imgs/boil_type/ต้มยำขาหมู.jpg" class="img1 " />
-            <div class="card-title">เมนูต้ม</div>
-        </ion-card>
-
-        <ion-card>
-            <img src="assets/imgs/ต้ม-แกง-4.jpg" class="img1" />
-            <div class="card-title">เมนูต้ม</div>
-        </ion-card>
-
-        <ion-card>
-            <img class="img1" src="assets/imgs/boil-01.jpg" />
-            <div class="card-title">เมนูต้ม</div>
-
-        </ion-card>
+        <p *ngFor="let data of keepListFood; index as j">
+            <!-- {{j+1}}. {{data}} -->
+            
+            <ion-card (click)="gotopage(data)" >
+                <img src="{{data[1]}}" class="img1" />
+                <div class="card-title">{{data[0]}}</div>
+            </ion-card>
+        </p>
 
     </ion-content>
