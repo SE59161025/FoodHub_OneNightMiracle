@@ -5,7 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: 'cook_detail.html'
 })
 export class cook_detail {
+ 
   constructor() {
-
+      
   }
+ 
 }
