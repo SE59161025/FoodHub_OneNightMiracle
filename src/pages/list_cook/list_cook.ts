@@ -17,9 +17,8 @@ export class list_cook implements OnInit {
   length : number = 0;
   a: any = ['Mushrooms', '123', '2', ['Mushrooms of the best', 'Mushrooms2', 'Mushrooms3']];
   constructor(public Params: NavParams, public navCtrl: NavController ,public _FoodListProvider:FoodListProvider) {
-    console.log(_FoodListProvider.food_list);
     this.toppings = Params.get('toppings');
-    console.log(_FoodListProvider.food_list[0][3].length);
+    console.log(_FoodListProvider.food_list.length);
     for(let l = 0 ; l < _FoodListProvider.food_list.length ; l++){
       this.checkUse[l] = 'false';
     }
@@ -30,6 +29,8 @@ export class list_cook implements OnInit {
       for (let j = 0; j < this.toppings.length; j++) {
         let substring = this.toppings[j],
             checkMacthIngredient = this.nameconcat.includes(substring);
+            console.log(substring);
+            console.log(this.nameconcat);
             console.log(checkMacthIngredient);
             if(checkMacthIngredient==true){
               if(this.checkUse[k]=='false'){
@@ -40,6 +41,7 @@ export class list_cook implements OnInit {
              
             }
       }
+      this.nameconcat ="";
     }
     console.log(this.keepListFood);
   }
