@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { list_eat } from '../list_eat/list_eat';
 import { NavController } from 'ionic-angular';
 import { FoodListProvider } from '../../providers/food-list/food-list';
+import { MenuPage } from '../menu/menu';
 
 @Component({
   selector: 'what-eat-page',
@@ -16,6 +17,10 @@ export class what_eat{
   pushPage(){
     this.navCtrl.push(list_eat, {
       'toppings': this.toppings
+    });
+  }
+  pushMenu(){
+    this.navCtrl.push(MenuPage, {
     });
   }
   checkvalue(data){
