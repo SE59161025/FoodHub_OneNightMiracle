@@ -4,6 +4,9 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
 })
+
+
+
 export class list_cook implements OnInit {
   toppings2: any = ['Mushrooms', '2', '4'];
   toppings: string;
@@ -17,6 +20,7 @@ export class list_cook implements OnInit {
 
     }
   }
+
   ngOnInit() {
     let test1 = this.a[3][0]+this.a[3][1]+this.a[3][2];
     
@@ -26,15 +30,8 @@ export class list_cook implements OnInit {
             checkMacthIngredient = test1.includes(substring);
             console.log(checkMacthIngredient);
     }
-  }
-  abc() {
-    for (var i = 0; i < this.toppings.length; i++) {
-      // if (this.typeof(a) == this.toppings[i]) {
-      if (this.a == this.toppings2[i]) {
-        this.car = true;
-      }
-    }
 
-    return this.car;
+    
+
   }
 }
