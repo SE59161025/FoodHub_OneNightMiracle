@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { cook_detail } from '../pages/cook_detail/cook_detail';
 import { eat_detail } from '../pages/eat_detail/eat_detail';
+import { type_food1 } from '../pages/type_food1/type_food1';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { eat_detail } from '../pages/eat_detail/eat_detail';
     HomePage,
     list_cook,
     cook_detail,
-    eat_detail
+    eat_detail,
+    type_food1
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { eat_detail } from '../pages/eat_detail/eat_detail';
     HomePage,
     list_cook,
     cook_detail,
-    eat_detail
+    eat_detail,
+    type_food1
   ],
   providers: [
     StatusBar,
