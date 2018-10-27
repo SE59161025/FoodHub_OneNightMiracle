@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
+import { FoodListProvider } from '../../providers/food-list/food-list';
 @Component({
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
@@ -44,5 +45,7 @@ export class list_cook implements OnInit {
     }
     console.log(this.keepListFood);
   }
-  
+  ngOnInit(){
+    
+  }
 }

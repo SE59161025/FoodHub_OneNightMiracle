@@ -20,18 +20,25 @@ export class what_cook{
       'toppings': this.toppings
     });
   }
+<<<<<<< HEAD
   pushMenu(){
     this.navCtrl.push(MenuPage, {
     });
   }
   func(value){
     if(value !== undefined){
+=======
+  func(){
+>>>>>>> 979cc8daea90c13863bcdf424b7aa6c565689f5a
       this.checkvalidate = true;
-    }
-    console.log(this.checkvalidate );
   }
   not(data){
     console.log('ทดสอบ ',data);
+    if(data.length!=0){
+      this.checkvalidate=true;
+    }else{
+      this. checkvalidate=false;
+    }
   }
   not2(){
     console.log('ทดสอบบบบบบบบบบบบบบบ');
