@@ -1,15 +1,30 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title>FoodHub</ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+        <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-buttons right>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title text-center>รายละเอียดร้านอาหาร</ion-title>
+  </ion-navbar>
+</ion-header>
   
   <ion-content padding>
-    <h3>FoodHub</h3>
-    <p>
-      eat_detail
-    </p>
+    <h4>ร้าน Standtall</h4>
+    
+    <ion-content class="card-background-page" >
+
+      <ion-card>
+        <img class="img_size" src="https://www.ryoiireview.com/upload/article/201708/1501586359_44e442d997186017cdcfb8e420508eff.jpg"/>
+
+      </ion-card>
+    
+    
+      
+    </ion-content>
   </ion-content>

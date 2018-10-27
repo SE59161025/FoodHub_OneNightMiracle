@@ -8,7 +8,6 @@ import { NavController } from 'ionic-angular';
 })
 export class what_cook{
   toppings : string;
-  check : any='Mushrooms';
   constructor(public navCtrl:NavController) {
 
   }
