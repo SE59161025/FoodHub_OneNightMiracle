@@ -4,7 +4,7 @@ import { NavController } from 'ionic-angular';
 import { FoodListProvider } from '../../providers/food-list/food-list';
 
 @Component({
-  selector: 'what_eat-page',
+  selector: 'what-eat-page',
   templateUrl: 'what_eat.html'
 })
 export class what_eat{
