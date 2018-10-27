@@ -1,6 +1,7 @@
+import { MenuPage } from './../menu/menu';
 import { type_food1 } from './../type_food1/type_food1';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 
 @Component({
   selector: 'home-page',
@@ -11,6 +12,10 @@ export class HomePage {
   }
   pushPage(){
     this.navCtrl.push(type_food1, {
+    });
+  }
+  pushMenu(){
+    this.navCtrl.push(MenuPage, {
     });
   }
   slidesfood = [

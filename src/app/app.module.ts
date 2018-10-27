@@ -15,8 +15,10 @@ import { eat_detail } from '../pages/eat_detail/eat_detail';
 //  author  : Supachai Boonying
 import { cook_detail } from '../pages/cook_detail/cook_detail';
 import { type_food1 } from '../pages/type_food1/type_food1';
-import { type_food2 } from '../pages/type_food2/type_food2';
+
 import { what_cook } from '../pages/what_cook/what_cook';
+
+import { MenuPage } from '../pages/menu/menu';
 
 
 
@@ -30,8 +32,11 @@ import { what_cook } from '../pages/what_cook/what_cook';
     type_food1,
     what_cook,
     eat_detail2,
+    MenuPage,
     type_food1
 
+  
+   
   ],
   imports: [
     BrowserModule,
@@ -46,8 +51,9 @@ import { what_cook } from '../pages/what_cook/what_cook';
     eat_detail,
     type_food1,
     what_cook,
-    eat_detail2,
-    type_food1
+    type_food1,
+    MenuPage,
+    eat_detail2
 
   ],
   providers: [
