@@ -9,6 +9,7 @@ import { FoodListProvider } from '../../providers/food-list/food-list';
 })
 export class what_cook{
   toppings : string;
+  checkvalidate:boolean=false;
   constructor(public navCtrl:NavController,private _FoodListProvider:FoodListProvider) {
     console.log(_FoodListProvider.test);
     console.log(_FoodListProvider.food_list);
@@ -17,5 +18,16 @@ export class what_cook{
     this.navCtrl.push(list_cook, {
       'toppings': this.toppings
     });
+  }
+  func(){
+    console.log(this.checkvalidate);
+    this.checkvalidate = true;
+    console.log(this.checkvalidate);
+  }
+  not(){
+    console.log('ทดสอบ');
+  }
+  not2(){
+    console.log('ทดสอบบบบบบบบบบบบบบบ');
   }
 }

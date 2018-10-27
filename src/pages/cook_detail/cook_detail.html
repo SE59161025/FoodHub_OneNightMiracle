@@ -18,13 +18,14 @@
           <div class="card-title">{{name}}</div>
          <!-- <div class="card-subtitle">41 Listings</div> --> 
       </ion-card>
+
       <ion-card style="width: 100%;">
         <ion-card-header >
           <h1 style="font-weight: bold;">ระดับความยาก</h1>
           </ion-card-header>
-          <ion-card-content style="transform: rotate(90deg); height: 40px; align: center;">
+          <ion-card-content style="transform: rotate(90deg); height: 40px;">
             <div *ngFor="let value of level;" >
-              <ion-icon name="star" style='color: yellow;'></ion-icon>
+              <ion-icon name="star" style='color: yellow; width: 20px;'></ion-icon>
             </div>
           </ion-card-content>
       </ion-card>

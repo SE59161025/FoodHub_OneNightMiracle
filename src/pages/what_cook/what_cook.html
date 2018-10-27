@@ -18,17 +18,18 @@
         
                 <ion-item>
                         <ion-label>Toppings</ion-label>
-                        <ion-select [(ngModel)]="toppings" multiple="true">
-                          <ion-option>ปลาสลิด</ion-option>
-                          <ion-option>ไข่ไก่</ion-option>
-                          <ion-option>กุ้ง</ion-option>
-                          <ion-option>แซลมอน</ion-option>
-                          <ion-option>เนื้อวัว</ion-option>
-                          <ion-option>เนื้อไก่</ion-option>
+                        <ion-select [(ngModel)]="toppings" multiple="true" (click)="not()">
+                          <ion-option >ปลาสลิด</ion-option>
+                          <ion-option >ไข่ไก่</ion-option>
+                          <ion-option >กุ้ง</ion-option>
+                          <ion-option >แซลมอน</ion-option>
+                          <ion-option >เนื้อวัว</ion-option>
+                          <ion-option >เนื้อไก่</ion-option>
                         </ion-select>
                       </ion-item>
+                      <input type='hidden' value="">
                       <div style="text-align: center">
-                            <button ion-button (click)="pushPage()" style="background-color: #71c9ce">ยืนยันการจอง</button>
+                            <button ion-button (click)="pushPage()" style="background-color: #71c9ce" disabled = "{{checkvalidate}}" >ยืนยันการจอง</button>
                     </div>
         
         

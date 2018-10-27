@@ -1,11 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { FoodListProvider } from '../../providers/food-list/food-list';
-import { cook_detail } from '../cook_detail/cook_detail';
+import { Component } from '@angular/core';
+import { NavController, NavParams} from 'ionic-angular';
 @Component({
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
 })
+<<<<<<< HEAD
 
 export class list_cook implements OnInit {
   toppings2: any = ['Mushrooms', '2', '4'];
@@ -45,24 +44,5 @@ export class list_cook implements OnInit {
     }
     console.log(this.keepListFood);
   }
-
-  ngOnInit() {
-    let test1 = this.a[3][0]+this.a[3][1]+this.a[3][2];
-    
-    console.log(test1);
-
-    
-  }
-  gotopage(data:any){
-    console.log(data);
-    this.navCtrl.push(cook_detail, {
-      name: data[0],
-      link_img: data[1],
-      solution: data[2], 
-      staple: data[3],
-      level: data[4],
-      time_solu: data[5],
-      time_sta: data[6]
-    });
-  }
+  
 }
