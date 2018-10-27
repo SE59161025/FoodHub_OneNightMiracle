@@ -14,27 +14,29 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="card-background-page " style="background-color:#389168" >
-  <h3>เมนูยอดนิยม</h3>
+<ion-content padding class="card-background-page " style="background-color:white" >
+  <h3 >เมนูยอดนิยม</h3>
   <ion-slides pager autoplay="100" loop="true" speed="1500" style="height:220px">
       <ion-slide *ngFor="let slide of slidesfood">
         <img [src]="slide.image" class="slidesroom-image img2"/>
       </ion-slide>
   </ion-slides>
-  <h3>ประเภทอาหาร</h3>
-  <ion-card (click)="pushPage()" >
+  <h3 >ประเภทอาหาร</h3>
+  <ion-card class="white-panel">
+  <ion-card (click)="pushPage()" class="ion-card">
       <img class="img1" src="assets/imgs/boil_type/ต้มยำขาหมู.jpg"/>
       <div class="card-title" >เมนูต้ม</div>
       <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
   </ion-card>
-  <ion-card>
+  <ion-card class="ion-card">
       <img class="img1" src="assets/imgs/fire_type/ปีกไก่ทอด.jpg"/>
       <div class="card-title ">เมนูทอด</div>
       <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
   </ion-card>
-  <ion-card>
+  <ion-card class="ion-card">
       <img class="img1" src="assets/imgs/food-type3.jpg"/>
       <div class="card-title">เมนูผัด</div>
       <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
   </ion-card>
+</ion-card>
 </ion-content>
