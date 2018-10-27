@@ -10,6 +10,7 @@ import { MenuPage } from '../menu/menu';
 })
 export class what_cook{
   toppings : string;
+  checkvalidate:boolean=false;
   constructor(public navCtrl:NavController,private _FoodListProvider:FoodListProvider) {
     console.log(_FoodListProvider.test);
     console.log(_FoodListProvider.food_list);
@@ -19,8 +20,26 @@ export class what_cook{
       'toppings': this.toppings
     });
   }
+<<<<<<< HEAD
   pushMenu(){
     this.navCtrl.push(MenuPage, {
     });
   }
+=======
+  func(value){
+    if(value !== undefined){
+      this.checkvalidate = true;
+    }
+    console.log(this.checkvalidate );
+  }
+  not(data){
+    console.log('ทดสอบ ',data);
+  }
+  not2(){
+    console.log('ทดสอบบบบบบบบบบบบบบบ');
+  }
+  showSelectValue = function(mySelect) {
+    console.log(mySelect);
+}
+>>>>>>> d5a8074f07bbdf528dac33360c9b5365a2e68e0d
 }
