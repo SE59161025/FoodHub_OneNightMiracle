@@ -1,3 +1,4 @@
+import { what_eat } from './../pages/what_eat/what_eat';
 import { eat_detail2 } from './../pages/eat_detail2/eat_detail2';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -35,7 +36,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     what_cook,
     eat_detail2,
     MenuPage,
-    type_food1
+    type_food1,
+    what_eat
 
   
    
@@ -58,7 +60,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     what_cook,
     type_food1,
     MenuPage,
-    eat_detail2
+    eat_detail2,
+    what_eat
 
   ],
   providers: [
