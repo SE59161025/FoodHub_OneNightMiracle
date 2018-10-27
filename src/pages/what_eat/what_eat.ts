@@ -12,8 +12,7 @@ export class what_eat{
   toppings : string;
   checkvalidate:boolean=false;
   constructor(public navCtrl:NavController,private _FoodListProvider:FoodListProvider) {
-    console.log(_FoodListProvider.test);
-    console.log(_FoodListProvider.food_list);
+
   }
   pushPage(){
     this.navCtrl.push(list_eat, {
@@ -24,7 +23,7 @@ export class what_eat{
     this.navCtrl.push(MenuPage, {
     });
   }
-  not(data){
+  checkvalue(data){
     console.log('ทดสอบ ',data);
     if(data.length!=0){
       this.checkvalidate=true;
@@ -32,10 +31,4 @@ export class what_eat{
       this. checkvalidate=false;
     }
   }
-  not2(){
-    console.log('ทดสอบบบบบบบบบบบบบบบ');
-  }
-  showSelectValue = function(mySelect) {
-    console.log(mySelect);
-}
 }
