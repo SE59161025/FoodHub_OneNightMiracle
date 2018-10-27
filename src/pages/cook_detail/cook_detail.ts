@@ -10,7 +10,7 @@ export class cook_detail implements OnInit {
     solution;
     staple;
     level : any [] = [];
-    nlvel : any [] = [];
+    nlevel : any [] = [];
     time_solu;
     time_sta;
   constructor(private navParams: NavParams) {
@@ -19,7 +19,7 @@ export class cook_detail implements OnInit {
     this.solution = navParams.get('solution');
     this.staple = navParams.get('staple');
     this.level.length = navParams.get('level');
-    this.nlvel.length = navParams.get('nlvel');
+    this.nlevel.length = navParams.get('nlevel');
     this.time_solu = navParams.get('time_solu');
     this.time_sta  = navParams.get('time_sta');
   }

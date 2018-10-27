@@ -41,7 +41,7 @@ export class type_food1 {
           "น้ำเปล่า 2 ลิตร ",
         ],
         level: 3,
-        nlvel: 2,
+        nlevel: 2,
         time_solu: 20,
         time_sta: 10
       });
@@ -69,7 +69,7 @@ export class type_food1 {
           "ถั่วฝักยาว 30 กรัม"
         ],
         level: 4,
-        nlvel: 1,
+        nlevel: 1,
         time_solu: 10,
         time_sta: 10
       });
@@ -103,7 +103,7 @@ export class type_food1 {
           "น้ำตาลทราย"
         ],
         level: 3,
-        nlvel: 2,
+        nlevel: 2,
         time_solu: 15,
         time_sta: 20
       });
@@ -131,7 +131,7 @@ export class type_food1 {
           "ผักชีฝรั่ง สำหรับโรยหน้า"
         ],
         level: 4,
-        nlvel: 1,
+        nlevel: 1,
         time_solu: 30,
         time_sta: 20
       });
@@ -165,7 +165,7 @@ export class type_food1 {
           "เส้นอุด้งลวก 200 กรัม"
         ],
         level: 3,
-        nlvel: 2,
+        nlevel: 2,
         time_solu: 30,
         time_sta: 20
       });
