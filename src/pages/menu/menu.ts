@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { what_cook } from '../what_cook/what_cook';
 import { HomePage } from '../home/home';
+import { contact } from '../contact/contact';
 
 @Component({
   selector: 'menu-page',
@@ -21,6 +22,10 @@ export class MenuPage {
   }
   pushhome(){
     this.navCtrl.push(HomePage, {
+    });
+  }
+  pushcontact(){
+    this.navCtrl.push(contact, {
     });
   }
 }
