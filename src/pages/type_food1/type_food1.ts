@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { cook_detail } from '../cook_detail/cook_detail';
 import { NavController,Platform } from 'ionic-angular';
-import {
-  GoogleMaps,
-  GoogleMap,
-  GoogleMapOptions
-} from '@ionic-native/google-maps';
 
 
 @Component({
@@ -13,25 +8,10 @@ import {
   templateUrl: 'type_food1.html'
 })
 export class type_food1 {
-  map: GoogleMap;
-  constructor(public navCtrl: NavController,private platforms: Platform) {
-    this.platforms.ready().then(()=>{
-      this.loadMap();
-    });
+  constructor(public navCtrl: NavController) {
+    
   }
-  loadMap() {
-
-    let options: GoogleMapOptions = {
-      controls: {
-        compass: true,
-        myLocation: true,
-        myLocationButton: true,
-        mapToolbar: true
-      }
-    };
-    this.map = GoogleMaps.create('map_canvas', options);
-  }
-
+ 
   goto_cook_detail(food) {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
