@@ -9,7 +9,9 @@ export class list_cook{
   car : boolean = false
   a : any='Mushrooms';
   constructor(public Params: NavParams,public navCtrl: NavController) {
-  this.toppings = Params.get('toppings');
+    fire_type=['เกี๊ยวทอด','ไก่ทอดหาดใหญ่','น่องไก่ทอดน้ำปลา','ปีกไก่ทอด','ไก่ทอดวิงส์แซ่บ','หมูแดดเดียวทอด','หมูสามชั้นทอด','ปลากระพงทอด','กุ้งทอด'];
+    boil_type=['ต้มยำขาหมู','ไข่พะโล้','แกงโฮะ','แกงฮังเล','แกงป่าหมู','แกงจืดสับปะรดซี่โครงอ่อน','ต้มแซปกระดูกอ่อน','แกงอ่อมหมู','ขาหมูต้มผักกาดดอง','แกงรัญจวน'];
+    this.toppings = Params.get('toppings');
   }
   abc(){
     for(var i = 0; i <this.toppings.length;i++){
