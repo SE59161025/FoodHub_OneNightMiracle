@@ -11,6 +11,11 @@ import { cook_detail } from '../pages/cook_detail/cook_detail';
 
 
 
+import { eat_detail } from '../pages/eat_detail/eat_detail';
+import { type_food1 } from '../pages/type_food1/type_food1';
+
+
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -34,6 +39,7 @@ export class MyApp {
       { title: 'list_cook', component: list_cook },
       { title: 'cook_detail', component: cook_detail },
       { title: 'eat_detail', component: eat_detail },
+      { title: 'type_food1', component: type_food1 },
     ];
   }
 
