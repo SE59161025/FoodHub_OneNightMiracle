@@ -3,6 +3,7 @@ home-page {
         ion-card {
           position: relative;
           text-align: center;
+          height: 100px;
         }
         .card-title {
           position: absolute;
@@ -24,6 +25,23 @@ home-page {
         opacity: 0.5;
         z-index: -1;
         height: 100px;
+        width: 100%;
+    }
+    .img2{
+        height: 200px;
+        width: 100%;
+    }
+    .slide-zoom {
+        height: 100%;
+    }
+    .slide-image {
+        max-height: 120px;
+        max-width: 240px;
+        margin: 0px 0px;
+    }
+    .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+        left: 0;
+        bottom: 0px;
         width: 100%;
     }
 }
