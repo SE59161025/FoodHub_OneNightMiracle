@@ -20,13 +20,13 @@ export class HomePage {
   }
   slidesfood = [
     {
-      image: "assets/imgs/boil-01.jpg",
+      image: "assets/imgs/boil_type/ต้มยำขาหมู.jpg",
     },
     {
-      image: "assets/imgs/food-type2.jpg",
+      image: "assets/imgs/fire_type/ปลากระพงทอด.jpg",
     },
     {
-      image: "assets/imgs/food-type3.jpg",
+      image: "assets/imgs/fire_type/เกี๊ยวทอด.jpg",
     }
   ];
 }
