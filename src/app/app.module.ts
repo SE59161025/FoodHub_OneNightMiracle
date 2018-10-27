@@ -24,6 +24,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { FoodListProvider } from '../providers/food-list/food-list';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { type_food2 } from '../pages/type_food2/type_food2';
+import { list_res } from '../pages/list_res/list_res';
 
 
 
@@ -40,7 +41,8 @@ import { type_food2 } from '../pages/type_food2/type_food2';
     eat_detail2,
     MenuPage,
     type_food2,
-    what_eat
+    what_eat,
+    list_res
 
   
    
@@ -65,7 +67,8 @@ import { type_food2 } from '../pages/type_food2/type_food2';
     type_food2,
     MenuPage,
     eat_detail2,
-    what_eat
+    what_eat,
+    list_res
 
   ],
   providers: [
