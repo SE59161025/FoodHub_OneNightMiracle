@@ -1,6 +1,6 @@
 <ion-header>
         <ion-navbar>
-          <ion-title>what_cook</ion-title>
+          <h2 align="center" style="color: white;">ทำอะไรดี</h2>
           <ion-buttons right>
               <button item-start ion-button icon-only (click)="pushMenu()">
                 <ion-icon name="menu"></ion-icon>
@@ -9,10 +9,12 @@
         </ion-navbar>
 </ion-header>
       <ion-content padding >
-       
-        
+        <div center>
+            <img class="img1" src="../assets/imgs/chef.png" style="width:50%">
+        </div>
+        <p>วัตถุดิบที่คุณมี</p>
                 <ion-item>
-                        <ion-label>Toppings</ion-label>
+                        <ion-label>วัตถุดิบ</ion-label>
                         <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="not($event)">
                           <ion-option >ปลาสลิด</ion-option>
                           <ion-option >ไข่ไก่</ion-option>

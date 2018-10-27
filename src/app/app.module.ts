@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { list_cook} from '../pages/list_cook/list_cook';
+import { list_eat} from '../pages/list_eat/list_eat';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,6 +24,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { FoodListProvider } from '../providers/food-list/food-list';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { type_food2 } from '../pages/type_food2/type_food2';
+import { list_res } from '../pages/list_res/list_res';
 
 
 
@@ -30,6 +32,7 @@ import { type_food2 } from '../pages/type_food2/type_food2';
   declarations: [
     MyApp,
     HomePage,
+    list_eat,
     list_cook,
     cook_detail,
     eat_detail,
@@ -38,7 +41,8 @@ import { type_food2 } from '../pages/type_food2/type_food2';
     eat_detail2,
     MenuPage,
     type_food2,
-    what_eat
+    what_eat,
+    list_res
 
   
    
@@ -55,6 +59,7 @@ import { type_food2 } from '../pages/type_food2/type_food2';
     MyApp,
     HomePage,
     list_cook,
+    list_eat,
     cook_detail,
     eat_detail,
     type_food1,
@@ -62,7 +67,8 @@ import { type_food2 } from '../pages/type_food2/type_food2';
     type_food2,
     MenuPage,
     eat_detail2,
-    what_eat
+    what_eat,
+    list_res
 
   ],
   providers: [
