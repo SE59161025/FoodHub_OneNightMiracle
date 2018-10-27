@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import { FoodListProvider } from '../../providers/food-list/food-list';
-import { eat_detail } from '../eat_detail/eat_detail';
-import { eat_detail2 } from '../eat_detail2/eat_detail2';
+import { list_res } from '../list_res/list_res';
 
 // import {
 //   GoogleMaps,
@@ -58,12 +57,7 @@ export class list_eat implements OnInit {
   ngOnInit(){
     
   }
-  gotopage(data){
-    if((data%2)==0){
-      this.navCtrl.push(eat_detail, {});
-    }else{
-      this.navCtrl.push(eat_detail2, {});
-    }
-    
+  gotopage(){
+      this.navCtrl.push(list_res, {});
   }
 }
