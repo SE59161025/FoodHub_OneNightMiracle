@@ -1,3 +1,4 @@
+import { eat_detail2 } from './../pages/eat_detail2/eat_detail2';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -23,6 +24,7 @@ import { type_food1 } from '../pages/type_food1/type_food1';
     list_cook,
     cook_detail,
     eat_detail,
+    eat_detail2,
     type_food1
   ],
   imports: [
@@ -36,6 +38,7 @@ import { type_food1 } from '../pages/type_food1/type_food1';
     list_cook,
     cook_detail,
     eat_detail,
+    eat_detail2,
     type_food1
   ],
   providers: [
