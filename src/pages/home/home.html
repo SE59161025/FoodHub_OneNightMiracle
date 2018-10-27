@@ -1,10 +1,5 @@
 <ion-header>
   <ion-navbar>
-    <ion-buttons left>
-        <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
-            <ion-icon name="arrow-back"></ion-icon>
-        </button>
-    </ion-buttons>
     <ion-title>Page</ion-title>
     <ion-buttons right>
       <button item-start ion-button icon-only color="dark" menuToggle>
@@ -14,9 +9,12 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>FoodHub</h3>
-  <p>
-    homepage
-  </p>
+<ion-content padding class="card-background-page">
+  <h3>เมนูยอดนิยม</h3>
+  <h3>ประเภทอาหาร</h3>
+  <ion-card>
+      <img class="img1" src="assets/imgs/boil-01.jpg"/>
+      <div class="card-title">เมนูต้ม</div>
+      <div class="card-subtitle"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></div>
+    </ion-card>
 </ion-content>
