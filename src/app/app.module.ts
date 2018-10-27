@@ -22,6 +22,7 @@ import { HttpModule } from '@angular/http';
 import { MenuPage } from '../pages/menu/menu';
 import { FoodListProvider } from '../providers/food-list/food-list';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { type_food2 } from '../pages/type_food2/type_food2';
 
 
 
@@ -36,7 +37,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     what_cook,
     eat_detail2,
     MenuPage,
-    type_food1,
+    type_food2,
     what_eat
 
   
@@ -58,7 +59,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     eat_detail,
     type_food1,
     what_cook,
-    type_food1,
+    type_food2,
     MenuPage,
     eat_detail2,
     what_eat

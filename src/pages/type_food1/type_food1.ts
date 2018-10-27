@@ -6,18 +6,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'type_food1.html'
 })
 export class type_food1 {
-  food = [
-    ["1", "2", "3", "4", "5", "7",],
-    ["ก", "ข", "ค", "ง", "จ", "ช",],
-    ["A", "B", "C", "D", "E", "F",],
-    ["a", "b", "c", "d", "e", "f",]
-  ];
+ 
   constructor(public navCtrl: NavController) {
 
   }
-  getfood() {
-    return this.food;
-  }
+ 
   goto_cook_detail(food) {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
@@ -67,7 +60,7 @@ export class type_food1 {
           "ซอสมะเขือเทศ 2 ช้อนโต๊ะ ",
           "ถั่วฝักยาว 30 กรัม"
         ],
-        level: "4",
+        level: 4,
         time_solu: 10,
         time_sta: 10
       });
@@ -127,7 +120,7 @@ export class type_food1 {
           "คนอร์ซุปไก่ก้อน 1 ก้อน",
           "ผักชีฝรั่ง สำหรับโรยหน้า"
         ],
-        level: "4",
+        level: 4,
         time_solu: 30,
         time_sta: 20
       });
@@ -160,7 +153,7 @@ export class type_food1 {
           "ใบกะเพราตามชอบ",
           "เส้นอุด้งลวก 200 กรัม"
         ],
-        level: "3",
+        level: 3,
         time_solu: 30,
         time_sta: 20
       });

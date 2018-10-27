@@ -1,23 +1,35 @@
 <ion-header>
-        <ion-navbar>
-          <ion-buttons left>
-              <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
-                  <ion-icon name="arrow-back"></ion-icon>
-              </button>
-          </ion-buttons>
-          <ion-title>type_food2</ion-title>
-          <ion-buttons right>
-            <button item-start ion-button icon-only color="dark" menuToggle>
-              <ion-icon name="menu"></ion-icon>
-            </button>
-          </ion-buttons>
-        </ion-navbar>
-      </ion-header>
-      
-      <ion-content padding >
-        <h3 class="band_center">type 2</h3>
-        <p>
-               
-        </p>
-      </ion-content>
-      
+  <ion-navbar>
+    <!-- <ion-buttons left>
+        <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+    </ion-buttons> -->
+    <ion-title align="center">ทอด</ion-title>
+    <ion-buttons right>
+      <button item-start ion-button icon-only color="dark" menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding><!-- start ion-content padding-->
+    <ion-content class="card-background-page">
+      <ion-card style="width: 100%; height: 20%;" (click)="goto_cook_detail(1)">
+          <img  src="https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/f067e784-5b73-49cc-8067-ec0a53afb4bb.jpg"/>
+          <div class="card-title">ไก่กรอบลาบแซ่บ</div>
+         <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 20%;" (click)="goto_cook_detail(2)">
+        <img  src="https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/558cea1d-cdec-4260-9cd1-39408802db00.jpg"/>
+        <div class="card-title">ไข่เจียวลาบ</div>
+       <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+      <ion-card style="width: 100%; height: 20%;" (click)="goto_cook_detail(3)">
+        <img  src="https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/7a18f3a0-91a4-468a-bd97-5813c6c7a3a3.jpg"/>
+        <div class="card-title">โรตีแกงเขียวหวานเนื้อ</div>
+      <!-- <div class="card-subtitle">41 Listings</div> --> 
+      </ion-card>
+    </ion-content>
+</ion-content>
+  
