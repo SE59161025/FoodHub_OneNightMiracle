@@ -6,6 +6,7 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { list_cook } from '../pages/list_cook/list_cook';
 
 
 @Component({
@@ -28,6 +29,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home', component: HomePage },
+      { title: 'รายการอาหาร', component: list_cook },
     ];
   }
 
