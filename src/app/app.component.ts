@@ -1,3 +1,4 @@
+import { eat_detail2 } from './../pages/eat_detail2/eat_detail2';
 import { Component, ViewChild } from '@angular/core';
 
 import { Platform, MenuController, Nav } from 'ionic-angular';
@@ -42,6 +43,8 @@ export class MyApp {
       { title: 'eat_detail', component: eat_detail },
       { title: 'type_food1', component: type_food1 },
       { title: 'what_cook', component: what_cook },
+      { title: 'eat_detail2', component: eat_detail2 },
+
     ];
   }
 

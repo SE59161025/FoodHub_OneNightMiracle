@@ -1,3 +1,4 @@
+import { eat_detail2 } from './../pages/eat_detail2/eat_detail2';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -14,12 +15,10 @@ import { eat_detail } from '../pages/eat_detail/eat_detail';
 //  author  : Supachai Boonying
 import { cook_detail } from '../pages/cook_detail/cook_detail';
 import { type_food1 } from '../pages/type_food1/type_food1';
-<<<<<<< HEAD
 import { type_food2 } from '../pages/type_food2/type_food2';
 import { what_cook } from '../pages/what_cook/what_cook';
-=======
-// End 
->>>>>>> 1f8720714290e6ffcf67af7eb3ee3deb82e92403
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +28,10 @@ import { what_cook } from '../pages/what_cook/what_cook';
     cook_detail,
     eat_detail,
     type_food1,
-    what_cook
+    what_cook,
+    eat_detail2,
+    type_food1
+
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,10 @@ import { what_cook } from '../pages/what_cook/what_cook';
     cook_detail,
     eat_detail,
     type_food1,
-    what_cook
+    what_cook,
+    eat_detail2,
+    type_food1
+
   ],
   providers: [
     StatusBar,
