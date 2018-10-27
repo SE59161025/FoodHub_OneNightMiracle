@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams} from 'ionic-angular';
 import { FoodListProvider } from '../../providers/food-list/food-list';
+import { cook_detail } from '../cook_detail/cook_detail';
 @Component({
   selector: 'list_cook-page',
   templateUrl: 'list_cook.html'
@@ -43,7 +44,18 @@ export class list_cook implements OnInit {
       }
       this.nameconcat ="";
     }
-    console.log(this.keepListFood);
+    
+  }
+  gotopage(data:any){
+    this.navCtrl.push(cook_detail, {
+      name: data[0],
+      link_img: data[1],
+      solution: data[2],
+      staple: data[3],
+      level: data[4],
+      time_solu: data[5],
+      time_sta: data[6]
+    });
   }
   ngOnInit(){
     
