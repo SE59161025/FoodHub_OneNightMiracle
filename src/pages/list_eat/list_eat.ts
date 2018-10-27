@@ -18,7 +18,7 @@ export class list_eat implements OnInit {
   a: any = ['Mushrooms', '123', '2', ['Mushrooms of the best', 'Mushrooms2', 'Mushrooms3']];
   constructor(public Params: NavParams, public navCtrl: NavController ,public _FoodListProvider:FoodListProvider) {
     this.toppings = Params.get('toppings');
-    console.log(_FoodListProvider.food_list.length);
+    console.log(Params.get('toppings'));
     for(let l = 0 ; l < _FoodListProvider.food_list.length ; l++){
       this.checkUse[l] = 'false';
     }

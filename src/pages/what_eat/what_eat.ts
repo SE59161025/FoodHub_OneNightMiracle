@@ -19,10 +19,6 @@ export class what_eat{
       'toppings': this.toppings
     });
   }
-  pushMenu(){
-    this.navCtrl.push(MenuPage, {
-    });
-  }
   checkvalue(data){
     console.log('ทดสอบ ',data);
     if(data.length!=0){
