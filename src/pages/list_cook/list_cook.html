@@ -15,10 +15,18 @@
 </ion-header>
 
 <ion-content padding>
-
-    {{toppings}}
+    <!-- {{keepListFood}} -->
+    <!-- {{toppings}} -->
     <p>
         รายการอาหาร
+    </p>
+    <p *ngFor="let data of keepListFood; index as j">
+        <!-- {{j+1}}. {{data}} -->
+        
+        <ion-card (click)="gotopage(data)" >
+            <img src="{{data[1]}}" class="img1" />
+            <div class="card-title">เมนูต้ม</div>
+        </ion-card>
     </p>
 
     <ion-content padding class="card-background-page">
