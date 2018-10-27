@@ -15,7 +15,7 @@ export class type_food2 {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
         name: "ไก่กรอบลาบแซ่บ",
-        link_img: "https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/f067e784-5b73-49cc-8067-ec0a53afb4bb.jpg",
+        link_img: "assets/imgs/fire_type/ไก่กรอบลาบแซ่บ.jpg",
         solution: [
           "เริ่มแรกให้ล้างปีกบนไก่ให้สะอาด แล้วซับด้วยกระดาษทิชชูให้แห้ง",
           "โรยเกลือป่น พริกไทยดำป่นแล้วคลุกเคล้าให้ทั่ว",
@@ -38,7 +38,7 @@ export class type_food2 {
     } else if (food == 2) {
       this.navCtrl.push(cook_detail, {
         name: "ไข่เจียวลาบ",
-        link_img: "https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/558cea1d-cdec-4260-9cd1-39408802db00.jpg",
+        link_img: "assets/imgs/fire_type/ไข่เจียวลาบ.jpg",
         solution: [
           "ตอกไข่ใส่ชาม แล้วตีไข่ด้วยส้อมจนขึ้นฟู",
           "ใส่น้ำมันลงกระทะก้นลึก ตั้งไฟร้อนปานกลาง ลองหยอดไข่ที่ตีไว้ลงไปเล็กน้อย ถ้าไข่ที่หยอดลงไปสุกฟูทันที แสดงว่าน้ำมันร้อนได้ที่แล้ว จึงเทไข่ที่เตรียมไว้ลงไปทอดทั้งหมดได้เลย",
@@ -62,7 +62,7 @@ export class type_food2 {
     } else if (food == 3) {
       this.navCtrl.push(cook_detail, {
         name: "โรตีแกงเขียวหวานเนื้อ",
-        link_img: "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/7a18f3a0-91a4-468a-bd97-5813c6c7a3a3.jpg",
+        link_img: "assets/imgs/fire_type/โรตีแกงเขียวหวานเนื้อ.jpg",
         solution: [
           "เริ่มทำแกงเขียวหวานเนื้อ ใส่กะทิลงในหม้อแล้วยกขึ้นตั้งไฟจนเดือด ใส่คนอร์สูตรสำเร็จแกงเขียวหวานลงไป คนจนละลายเข้ากันดี",
           "พอน้ำแกงเดือดอีกครั้งใส่เนื้อวัวลงไป แล้วคนให้เข้ากัน",

@@ -15,7 +15,7 @@ export class type_food1 {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
         name: "ซุปไข่มักกะโรนี",
-        link_img: "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/f24c927c-9420-436c-9873-8e814487acfb.jpg",
+        link_img: "assets/imgs/boil_type/ซุปไข่มักกะโรนี.jpg",
         solution: [
           "ตั้งหม้อบนเตาแก๊สจากนั้นใส่น้ำเปล่าลงไป โดยใช้ไฟปานกลาง เมื่อน้ำเริ่มเดือดให้ใส่ ซุปไก่ก้อน คนอร์ เนเชอรัล ลงไปในน้ำเดือด ตามด้วยเกลือและพริกไทย",
           "ใส่แครอทหั่นเต๋าลงไปต้มจนแครอทนิ่มค่อยใส่เนื้อสัตว์เข้าไป",
@@ -40,7 +40,7 @@ export class type_food1 {
     } else if (food == 2) {
       this.navCtrl.push(cook_detail, {
         name: "แกงส้มหนูน้อย",
-        link_img: "https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/48af5aca-cc10-47c7-a371-edea926bfb79.jpg",
+        link_img: "assets/imgs/boil_type/แกงส้มหนูน้อย.jpg",
         solution: [
           "นำหม้อขึ้นตั้งไฟปานกลาง เทน้ำเปล่าลงไป และรอจนเดือด ใส่ ซุปหมูก้อน คนอร์ เนเชอรัล ลงไป ตามด้วยซอสมะเขือเทศ และแซลมอนบด",
           "ใส่แครอท บรอคโคลี หัวไชเท้า ดอกกะหล่ำ และถั่วฝักยาว ต้มจนสุก",
@@ -67,7 +67,7 @@ export class type_food1 {
     } else if (food == 3) {
       this.navCtrl.push(cook_detail, {
         name: "แกงไก่หน่อไม้ดอง",
-        link_img: "https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/d2175818-0326-4032-8887-532459d55c78.jpg",
+        link_img: "assets/imgs/boil_type/แกงไก่หน่อไม้ดอง.jpg",
         solution: [
           "นำหน่อไม้ดองไปล้างให้สะอาดแล้วหั่นเป็นแท่งยาวเตรียมไว้",
           "หั่นข่า ตะไคร้ พริกชี้ฟ้าแห้ง ปอกกระเทียมและหอมแดงเตรียมไว้",
@@ -100,7 +100,7 @@ export class type_food1 {
     } else if (food == 4) {
       this.navCtrl.push(cook_detail, {
         name: "ต้มยำไก่บ้านใบมะขามอ่อน",
-        link_img: "https://scm-assets.constant.co/scm/unilever/1d398653b55393fd6da9bff8ea193338/477463e1-9be6-425b-bf83-0b5e6a686c0b.jpg",
+        link_img: "assets/imgs/boil_type/ต้มยำไก่บ้านใบมะขามอ่อน.jpg",
         solution: [
           "นำไก่บ้านที่ล้างให้สะอาดแล้วมาสับเป็นชิ้นพอดีคำ แล้วพักเอาไว้เตรียมนำไปทำต้มยำ",
           "นำหม้อใส่น้ำเปล่ายกขึ้นตั้งไฟโดยใช้ปานกลาง เมื่อน้ำเริ่มร้อนใส่ คนอร์ซุปไก่ก้อน ลงไปในหม้อ ตามด้วยข่า ตะไคร้ พริกขี้หนูบุบ และเนื้อไก่ลงไป คอยช้อนฟองเรื่อย ๆ เพื่อให้น้ำซุปใสขึ้นค่ะ",
@@ -127,7 +127,7 @@ export class type_food1 {
     } else if (food == 5) {
       this.navCtrl.push(cook_detail, {
         name: "อุด้งต้มโคล้งปลาสลิดทอด",
-        link_img: "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/af1021d4-3645-4e70-b7b9-bfab248dd941.png",
+        link_img: "assets/imgs/boil_type/อุด้งต้มโคล้งปลาสลิดทอด.jpg",
         solution: [
           "ปอกหอมเเดง กระเทียม ทุบหอมเเดง กระเทียมเบาๆ หั่นมะเขือเทศ ซอยผข่า หั่นตะไคร้ยาวประมาณหนึ่งนิ้วทุบพอให้มีกลิ่นเบาๆ ฉีกใบมะกรูดเตรียมไว้",
           "ตั้งกระทะคั่ว หอมเเดง กระเทียม ตะไคร้ พริกเเห้ง ข่า ให้มีกลิ่นหอมยิ่งขึ้น คั่วไปอ่อนพอมีกลิ่นหอมตักพักเตรียมไว้",
