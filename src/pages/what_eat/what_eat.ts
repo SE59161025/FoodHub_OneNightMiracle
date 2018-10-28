@@ -3,29 +3,31 @@ import { list_eat } from '../list_eat/list_eat';
 import { NavController } from 'ionic-angular';
 import { FoodListProvider } from '../../providers/food-list/food-list';
 import { MenuPage } from '../menu/menu';
+
 @Component({
   selector: 'what-eat-page',
   templateUrl: 'what_eat.html'
 })
-export class what_eat {
-  toppings: string;
-  checkvalidate: boolean = false;
-  constructor(public navCtrl: NavController, private _FoodListProvider: FoodListProvider) {
+export class what_eat{
+  toppings : string;
+  checkvalidate:boolean=false;
+  constructor(public navCtrl:NavController,private _FoodListProvider:FoodListProvider) {
+
   }
-  pushPage() {
+  pushPage(){
     this.navCtrl.push(list_eat, {
       'toppings': this.toppings
     });
   }
-  pushMenu() {
+  pushMenu(){
     this.navCtrl.push(MenuPage, {
     });
   }
-  checkvalue(data) {
-    if (data.length != 0) {
-      this.checkvalidate = true;
-    } else {
-      this.checkvalidate = false;
+  checkvalue(data){
+    if(data.length!=0){
+      this.checkvalidate=true;
+    }else{
+      this. checkvalidate=false;
     }
   }
 }

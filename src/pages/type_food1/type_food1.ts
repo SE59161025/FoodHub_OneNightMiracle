@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
 import { cook_detail } from '../cook_detail/cook_detail';
 import { NavController } from 'ionic-angular';
+
+
 @Component({
   selector: 'type-food1-page',
   templateUrl: 'type_food1.html'
 })
 export class type_food1 {
   constructor(public navCtrl: NavController) {
+    
   }
+ 
   goto_cook_detail(food) {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
@@ -156,4 +160,6 @@ export class type_food1 {
       });
     }
   }
+
+  
 }

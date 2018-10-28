@@ -2,7 +2,8 @@ import { type_food2 } from './../type_food2/type_food2';
 import { MenuPage } from './../menu/menu';
 import { type_food1 } from './../type_food1/type_food1';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
+
 @Component({
   selector: 'home-page',
   templateUrl: 'home.html'
@@ -10,15 +11,15 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
   constructor(public navCtrl: NavController) {
   }
-  pushPage() {
+  pushPage(){
     this.navCtrl.push(type_food1, {
     });
   }
-  pushPage2() {
+  pushPage2(){
     this.navCtrl.push(type_food2, {
     });
   }
-  pushMenu() {
+  pushMenu(){
     this.navCtrl.push(MenuPage, {
     });
   }

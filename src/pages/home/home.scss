@@ -43,12 +43,14 @@ home-page {
         max-height: 120px;
         max-width: 240px;
         margin: 0px 0px;
+
     }
     .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
         left: 0;
         bottom: 0px;
         width: 100%;
     }
+
     .white-panel{
         position: relative;
         text-align: center;
@@ -59,5 +61,6 @@ home-page {
         -moz-box-shadow: 7px 13px 17px 0px rgba(0,0,0,0.7);
         box-shadow: 7px 13px 17px 0px rgba(0,0,0,0.7);
       }
+
 }
 

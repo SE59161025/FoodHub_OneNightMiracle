@@ -6,8 +6,11 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'type_food2.html'
 })
 export class type_food2 {
+  
   constructor(public navCtrl: NavController) {
+
   }
+
   goto_cook_detail(food) {
     if (food == 1) {
       this.navCtrl.push(cook_detail, {
@@ -82,6 +85,6 @@ export class type_food2 {
         time_solu: 20,
         time_sta: 15
       });
-    }
+    } 
   }
 }
