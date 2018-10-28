@@ -81,9 +81,5 @@ export class FoodListProvider {
     ],
   ];
   constructor(public http: HttpClient) {
-<<<<<<< HEAD
-=======
-    console.log('Hello FoodListProvider Provider');
->>>>>>> parent of 9655264... remove comment at list_cook , what_cook.ts , food-list.ts
   }
 }

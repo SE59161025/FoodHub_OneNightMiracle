@@ -45,12 +45,6 @@ export class list_cook implements OnInit {
       time_sta: data[6]
     });
   }
-<<<<<<< HEAD
   ngOnInit() {
-=======
-  ngOnInit(){
-
-    // this.keepListFood  = [];
->>>>>>> parent of 9655264... remove comment at list_cook , what_cook.ts , food-list.ts
   }
 }
