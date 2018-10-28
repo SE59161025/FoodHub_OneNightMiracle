@@ -9,6 +9,7 @@ import { Injectable } from '@angular/core';
 */
 @Injectable()
 export class FoodListProvider {
+  test: any = "555555";
   food_list: any = [
     ['ซุปไข่มักกะโรนี', 
       'https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/f24c927c-9420-436c-9873-8e814487acfb.jpg',
@@ -82,7 +83,7 @@ export class FoodListProvider {
     ],
   ];
   constructor(public http: HttpClient) {
-    
+    console.log('Hello FoodListProvider Provider');
   }
 
 }
