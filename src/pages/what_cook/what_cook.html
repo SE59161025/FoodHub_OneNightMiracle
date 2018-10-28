@@ -15,7 +15,7 @@
         <p style="font-size: 20px;">วัตถุดิบที่คุณมี</p>
                 <ion-item>
                         <ion-label>วัตถุดิบ</ion-label>
-                        <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="FncCheckValidate($event)">
+                        <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="CheckSelect($event)">
                           <ion-option >ปลาสลิด</ion-option>
                           <ion-option >ไข่ไก่</ion-option>
                           <ion-option >กุ้ง</ion-option>
