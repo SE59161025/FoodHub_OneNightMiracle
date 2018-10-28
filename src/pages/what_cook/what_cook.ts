@@ -12,8 +12,7 @@ export class what_cook{
   toppings : string;
   checkvalidate:boolean=false;
   constructor(public navCtrl:NavController,private _FoodListProvider:FoodListProvider) {
-    console.log(_FoodListProvider.test);
-    console.log(_FoodListProvider.food_list);
+
   }
   pushPage(){
     this.navCtrl.push(list_cook, {
@@ -24,18 +23,14 @@ export class what_cook{
     this.navCtrl.push(MenuPage, {
     });
   }
-  not(data){
-    console.log('ทดสอบ ',data);
+  FncCheckValidate(data){
     if(data.length!=0){
       this.checkvalidate=true;
     }else{
       this. checkvalidate=false;
     }
   }
-  not2(){
-    console.log('ทดสอบบบบบบบบบบบบบบบ');
-  }
   showSelectValue = function(mySelect) {
-    console.log(mySelect);
+    
 }
 }

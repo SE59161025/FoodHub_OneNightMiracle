@@ -7,46 +7,34 @@ import { cook_detail } from '../cook_detail/cook_detail';
   templateUrl: 'list_cook.html'
 })
 export class list_cook implements OnInit {
-  toppings2: any = ['Mushrooms', '2', '4'];
   toppings: string;
-  car: boolean = false;
-  nameconcat : string="";
+  stringconcat : string="";
   checkUse : any [] = [] ;
   keepListFood : any [] = [];
-  a: any = ['Mushrooms', '123', '2', ['Mushrooms of the best', 'Mushrooms2', 'Mushrooms3']];
   constructor(public Params: NavParams, public navCtrl: NavController ,public _FoodListProvider:FoodListProvider) {
     this.keepListFood  = [];
     this.toppings = Params.get('toppings');
-    // console.log(`check`,this.toppings);
-    // console.log(_FoodListProvider.food_list);
-    // console.log(_FoodListProvider.food_list.length);
     for(let l = 0 ; l < _FoodListProvider.food_list.length ; l++){
       this.checkUse[l] = 'false';
     }
     for(let k = 0 ; k < _FoodListProvider.food_list.length ; k++){
       for (let i = 0; i < _FoodListProvider.food_list[k][3].length; i++) {
-        this.nameconcat += _FoodListProvider.food_list[k][3][i];
+        this.stringconcat += _FoodListProvider.food_list[k][3][i];
       }
       for (let j = 0; j < this.toppings.length; j++) {
         let substring = this.toppings[j],
-            checkMacthIngredient = this.nameconcat.includes(substring);
-            // console.log(substring);
-            // console.log(this.nameconcat);
-            // console.log(checkMacthIngredient);
+            checkMacthIngredient = this.stringconcat.includes(substring);
             if(checkMacthIngredient==true){
               if(this.checkUse[k]=='false'){
-                console.log(_FoodListProvider.food_list[k]);
                 this.keepListFood.push(_FoodListProvider.food_list[k]);
                 this.checkUse[k]='true';
               }
              
             }
       }
-      this.nameconcat ="";
-      // this.length=0;
+      this.stringconcat ="";
     }
-    console.log(this.keepListFood);
-    
+  
   }
   gotopage(data:any){
     this.navCtrl.push(cook_detail, {
