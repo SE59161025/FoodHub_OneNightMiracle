@@ -48,7 +48,5 @@ export class list_cook implements OnInit {
     });
   }
   ngOnInit(){
-
-    // this.keepListFood  = [];
   }
 }
