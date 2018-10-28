@@ -12,19 +12,19 @@ import { contact } from '../contact/contact';
 export class MenuPage {
   constructor(public navCtrl: NavController) {
   }
-  pushcook(){
+  pushcook() {
     this.navCtrl.push(what_cook, {
     });
   }
-  pusheat(){
+  pusheat() {
     this.navCtrl.push(what_eat, {
     });
   }
-  pushhome(){
+  pushhome() {
     this.navCtrl.push(HomePage, {
     });
   }
-  pushcontact(){
+  pushcontact() {
     this.navCtrl.push(contact, {
     });
   }

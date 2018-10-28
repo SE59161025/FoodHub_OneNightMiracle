@@ -1,35 +1,32 @@
 <ion-header>
-        <ion-navbar>
-          <h2 align="center" style="color: white;">ทำอะไรดี</h2>
-          <ion-buttons right>
-              <button item-start ion-button icon-only (click)="pushMenu()">
-                <ion-icon name="menu"></ion-icon>
-              </button>
-          </ion-buttons>
-        </ion-navbar>
+  <ion-navbar>
+    <h2 style="color: white;">ทำอะไรดี</h2>
+    <ion-buttons right>
+      <button item-start ion-button icon-only (click)="pushMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
 </ion-header>
-      <ion-content padding style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat; " >
-        <div center>
-            <img class="img1" src="../assets/imgs/chef.png" style="width:50%">
-        </div>
-        <p style="font-size: 20px;">วัตถุดิบที่คุณมี</p>
-                <ion-item>
-                        <ion-label>วัตถุดิบ</ion-label>
-                        <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="CheckSelect($event)">
-                          <ion-option >ปลาสลิด</ion-option>
-                          <ion-option >ไข่ไก่</ion-option>
-                          <ion-option >กุ้ง</ion-option>
-                          <ion-option >แซลมอน</ion-option>
-                          <ion-option >เนื้อวัว</ion-option>
-                          <ion-option >เนื้อไก่</ion-option>
-                        </ion-select>
-                      </ion-item>
-                      <input type='hidden' value="">
-                      <br>
-                      <div style="text-align: center">
-                            <button ion-button (click)="pushPage()" style="background-color: #71c9ce" [disabled] = "!checkvalidate ">ยืนยัน</button>
-                    </div>
-        
-        
-      </ion-content>
-      
+<ion-content padding style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat; ">
+  <div center>
+    <img class="img1" src="../assets/imgs/chef.png" style="width:50%">
+  </div>
+  <p style="font-size: 20px;">วัตถุดิบที่คุณมี</p>
+  <ion-item>
+    <ion-label>วัตถุดิบ</ion-label>
+    <ion-select [(ngModel)]="toppings" multiple="true" (ionChange)="CheckSelect($event)">
+      <ion-option>ปลาสลิด</ion-option>
+      <ion-option>ไข่ไก่</ion-option>
+      <ion-option>กุ้ง</ion-option>
+      <ion-option>แซลมอน</ion-option>
+      <ion-option>เนื้อวัว</ion-option>
+      <ion-option>เนื้อไก่</ion-option>
+    </ion-select>
+  </ion-item>
+  <input type='hidden' value="">
+  <br>
+  <div style="text-align: center">
+    <button ion-button (click)="pushPage()" style="background-color: #71c9ce" [disabled]="!checkvalidate ">ยืนยัน</button>
+  </div>
+</ion-content>

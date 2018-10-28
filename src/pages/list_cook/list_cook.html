@@ -1,11 +1,11 @@
 <ion-header>
     <ion-navbar>
-        <h2 text-center  style="color:white;">รายการอาหาร</h2>
+        <h2 text-center style="color:white;">รายการอาหาร</h2>
     </ion-navbar>
 </ion-header>
 <ion-content class="card-background-page" style="background-image: url('assets/imgs/wallpaper6.jpg');  background-size:100% 100%;  background-repeat: no-repeat;">
     <p *ngFor="let data of keepListFood; index as j">
-        <ion-card (click)="gotopage(data)" >
+        <ion-card (click)="gotopage(data)">
             <img src="{{data[1]}}" class="img1" />
             <div class="card-title">{{data[0]}}</div>
         </ion-card>
